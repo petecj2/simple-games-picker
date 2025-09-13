@@ -15,9 +15,9 @@ a prompt instructs you to predict a week. For example, in Week 1 the file should
 Use ALL available agents for comprehensive analysis:
 - **np-elo-agent**: Statistical power ratings and ELO analysis
 - **betting-line-agent**: Market wisdom and sharp money indicators  
-- **early-season-agent**: Specialized analysis for Weeks 1-4 only (handles uncertainty and organizational factors)
 
-For Weeks 1-4: Weight the early-season-agent's recommendations heavily, especially regarding confidence levels and organizational stability factors.
+Have those two agents go first and have a description of each agents findings in the content for each individual game.  Only after both of those agents are done, use this 3rd agent:
+- **early-season-agent**: Specialized analysis for Weeks 1-4 only (handles uncertainty and organizational factors)
 
 This file should contain an analysis from each relevant agent and a thorough analysis that includes injuries for the Standard game. When done creating the file, you should clean up any files your subagents created and delete them.
 

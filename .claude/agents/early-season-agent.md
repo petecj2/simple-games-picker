@@ -1,7 +1,8 @@
 ---
 name: early-season-agent
-description: "Provides specialized analysis for NFL Weeks 1-4 to handle early season uncertainty and patterns"
-tools: [WebFetch, WebSearch, Read, Write]
+description: Provides specialized analysis for NFL Weeks 1-4 to handle early season uncertainty and patterns
+model: sonnet
+color: orange
 ---
 
 # Early Season NFL Analysis Agent (Weeks 1-4)

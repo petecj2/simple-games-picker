@@ -12,8 +12,9 @@ This system reads weekly NFL power ratings data from Neil Paine's Substack and u
 
 ## Data Source
 - **Primary Source**: https://neilpaine.substack.com/p/2025-nfl-power-ratings-and-projections
-- **Backup GitHub Data**: https://github.com/Neil-Paine-1/NFL-elo-ratings
-- **Update Frequency**: Weekly (typically updated on Tuesdays)
+DO NOT USE OTHER DATA SOURCES!!!
+
+Pull content only from the URL listed as a Primary Source above!
 
 ## Data Structure Expected
 
