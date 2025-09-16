@@ -37,47 +37,8 @@ The system expects the following data fields:
 - `win_probability`: Home team win probability
 
 ## Prediction Methodology
+Simply read the predictions from the table in the "Upcoming NFL games" section and DO NOT PERFORM ANY ADDITIONAL ANALYSIS
 
-### 1. Power Rating Differential
-```
-Expected Point Differential = Home Team Rating - Away Team Rating + Home Field Advantage
-```
-
-### 2. Home Field Advantage
-- **Standard HFA**: +2.5 points
-- **Adjustable by team/stadium**: Range from +1.5 to +3.5 points
-- **Weather/conditions**: Additional -0.5 to +1.0 point adjustments
-
-### 3. Win Probability Calculation
-Using logistic regression based on point differential:
-```
-Win Probability = 1 / (1 + e^(-point_differential / 13.86))
-```
-
-### 4. Confidence Levels
-- **High Confidence**: Power rating differential > 7 points
-- **Medium Confidence**: Power rating differential 3-7 points  
-- **Low Confidence**: Power rating differential < 3 points
-
-## Weekly Data Collection Process
-
-### Step 1: Data Retrieval
-1. Check Neil Paine's Substack for updated ratings
-2. If Substack unavailable, fetch from GitHub backup
-3. Parse HTML tables or CSV data
-4. Validate data completeness and format
-
-### Step 2: Data Processing
-1. Clean team names and standardize abbreviations
-2. Calculate derived metrics (rating differentials, etc.)
-3. Update historical database with new ratings
-4. Flag any significant rating changes (>5 points)
-
-### Step 3: Game Prediction Generation
-1. Retrieve upcoming week's NFL schedule
-2. Apply prediction methodology to each game
-3. Generate confidence intervals
-4. Create formatted output
 
 ## Team Abbreviation Mapping
 ```
@@ -179,41 +140,6 @@ Against the Spread: XX-XX (XX.X%)
 - Log all data retrieval attempts and errors
 - Provide degraded service with historical data if needed
 - Alert user when data freshness exceeds threshold
-
-### Update Triggers
-- Automatic weekly updates (Tuesday mornings)
-- Manual refresh capability
-- Real-time updates during season if data source supports
-- Post-game rating updates (Wednesday mornings)
-
-## Advanced Features
-
-### Historical Performance Analysis
-- Track prediction accuracy over time
-- Identify systematic biases in predictions
-- Calibrate confidence levels based on historical performance
-- Adjust methodology based on prediction success
-
-### Situational Adjustments
-- **Divisional Games**: Reduce power rating differential by 10%
-- **Prime Time Games**: Account for team performance in national games
-- **Weather Conditions**: Adjust total points and spreads for outdoor games
-- **Rest Advantage**: Factor in days of rest differential
-- **Playoff Implications**: Boost ratings for teams fighting for playoffs
-
-### Integration Capabilities
-- Export predictions to ESPN bracket challenges
-- Generate DraftKings/FanDuel optimal lineups based on predictions
-- Create betting recommendation reports
-- API endpoints for external applications
-
-## Maintenance Schedule
-- **Monday**: Update with previous week's results
-- **Tuesday**: Fetch new power ratings and generate predictions  
-- **Wednesday**: Validate predictions against betting markets
-- **Thursday**: Final adjustments before TNF game
-- **Monthly**: Review and tune prediction methodology
-- **End of Season**: Comprehensive accuracy analysis and model improvements
 
 ---
 

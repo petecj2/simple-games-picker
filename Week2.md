@@ -1,6 +1,32 @@
 # Week 2 NFL Game Predictions - ESPN Pigskin Pick'em
 *Analysis Date: September 13, 2025*
 
+## Week 2 Results and Analysis
+*Final Results - September 16, 2025*
+
+**Final Records:**
+- **Pete's Picks: 11-5 (68.8%)**
+- **Claude Analysis: 9-7 (56.3%)**
+
+**Key Takeaways:** Pete's conservative approach of picking mostly favorites significantly outperformed Claude's early-season upset strategy. The betting markets and traditional analysis proved more reliable than expected organizational factors in Week 2.
+
+**What Worked for Pete:** 
+- Conservative favorite-picking strategy (14 of 15 picks were favorites)
+- Only 1 upset pick (Broncos over Colts) which lost, but overall approach was sound
+- Strong performance on obvious favorites (Ravens, Lions, Bills, Cowboys)
+
+**What Didn't Work for Claude:**
+- Over-emphasis on early-season organizational factors
+- Too many upset picks (5+) based on "nothing-to-lose" narratives  
+- Championship pressure theory didn't materialize (49ers, Bills won easily)
+- Coaching transition impact was overstated
+
+**Week 3 Improvements:** 
+- Reduce emphasis on early-season upset potential
+- Weight betting market wisdom more heavily
+- Use organizational factors as tie-breakers, not primary drivers
+- Be more selective with upset picks (1-2 max per week)
+
 ## Synopsis of Week 2 Picks
 
 ### Pete Picks

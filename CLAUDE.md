@@ -16,8 +16,10 @@ Use ALL available agents for comprehensive analysis:
 - **np-elo-agent**: Statistical power ratings and ELO analysis
 - **betting-line-agent**: Market wisdom and sharp money indicators  
 
-Have those two agents go first and have a description of each agents findings in the content for each individual game.  Only after both of those agents are done, use this 3rd agent:
-- **early-season-agent**: Specialized analysis for Weeks 1-4 only (handles uncertainty and organizational factors)
+Have those two agents go first and have a description of each agents findings in the content for each individual game.  Only after both of those agents are done, use the following methodology:
+
+- When the agents agree, pick the team they agree on
+- When the agents disagree, do your best to break the tie and highlight such games in bold in the synopsis section of the weekly file produced
 
 This file should contain an analysis from each relevant agent and a thorough analysis that includes injuries for the Standard game. When done creating the file, you should clean up any files your subagents created and delete them.
 
