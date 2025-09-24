@@ -1,6 +1,37 @@
 # Week 3 NFL Game Predictions - ESPN Pigskin Pick'em
 *Analysis Date: September 20, 2025*
 
+## Week 3 Results and Analysis
+*Final Results - September 23, 2025*
+
+**Final Records:**
+- **Pete's Picks: 8-8 (50.0%)**
+- **Claude's Picks: 5-11 (31.25%)**
+
+**Key Takeaways:** Both struggled with several major upsets. Massive favorites (GB, MIN, WSH) all lost outright. Week 3 featured historic defensive/special teams scoring with 9 non-offensive TDs on Sunday alone.
+
+**What Worked for Pete:** 
+- Correctly picked IND, PHI, and KC in our disagreement games (3-0 on those)
+- Got key favorites right: BUF, TB, SEA, SF
+- Traditional analysis beat contrarian approach
+
+**What Didn't Work for Claude:**
+- Too contrarian on some picks (NYG over KC, LAR over PHI, TEN over IND)
+- Went 0-3 on games where we disagreed
+- Sharp money indicators failed badly (HOU, LAR, LV all lost)
+
+**Biggest Surprises:**
+1. **Panthers 30, Falcons 0** - Complete shock shutout (both picked ATL)
+2. **Vikings 48, Bengals 10** - Massive blowout opposite of expectations (both picked CIN)
+3. **Browns 13, Packers 10** - Stunning upset of 75% ELO favorite (both picked GB)
+4. **Commanders 41, Raiders 24** - Despite QB injury, WSH dominated (both picked LV)
+
+**Week 4 Improvements:**
+- Be more cautious with road favorites, especially large spreads
+- Consider defensive/special teams impact more heavily
+- Don't overweight injury news (Commanders won big despite backup QB)
+- Respect home underdogs in divisional games
+
 ## Synopsis of Week 3 Picks
 
 ### Week 3 Picks Comparison
@@ -15,22 +46,22 @@
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Thu 9/18 | 8:15 PM | MIA | BUF | BUF | BUF | BUF | BUF |  |
-| Sun 9/21 | 1:00 PM | PIT | NE | PIT | NE | **NE** | NE |  |
-| Sun 9/21 | 1:00 PM | HOU | JAX | HOU | HOU | **HOU** | HOU |  |
-| Sun 9/21 | 1:00 PM | IND | TEN | IND | TEN | **TEN** | IND |  |
-| Sun 9/21 | 1:00 PM | CIN | MIN | CIN | CIN | **CIN** | CIN |  |
-| Sun 9/21 | 1:00 PM | ATL | CAR | ATL | ATL | **ATL** | ATL |  |
-| Sun 9/21 | 1:00 PM | LAR | PHI | LAR | LAR | **LAR** | PHI |  |
-| Sun 9/21 | 1:00 PM | GB | CLE | GB | GB | **GB** | GB |  |
-| Sun 9/21 | 1:00 PM | LV | WSH | LV | LV | **LV** | LV |  |
-| Sun 9/21 | 1:00 PM | NYJ | TB | TB | TB | **TB** | TB |  |
-| Sun 9/21 | 4:05 PM | DEN | LAC | LAC | LAC | **LAC** | LAC |  |
-| Sun 9/21 | 4:05 PM | NO | SEA | SEA | SEA | **SEA** | SEA |  |
-| Sun 9/21 | 4:25 PM | DAL | CHI | DAL | DAL | **DAL** | DAL |  |
-| Sun 9/21 | 4:25 PM | ARI | SF | SF | SF | **SF** | SF |  |
-| Sun 9/21 | 8:20 PM | KC | NYG | KC | NYG | **NYG** | KC |  |
-| Mon 9/22 | 8:15 PM | DET | BAL | BAL | BAL | **BAL** | BAL |  |
+| Thu 9/18 | 8:15 PM | MIA | BUF | BUF | BUF | BUF | BUF | **BUF** ✅✅ |
+| Sun 9/21 | 1:00 PM | PIT | NE | PIT | NE | **NE** | NE | **PIT** ❌❌ |
+| Sun 9/21 | 1:00 PM | HOU | JAX | HOU | HOU | **HOU** | HOU | **JAX** ❌❌ |
+| Sun 9/21 | 1:00 PM | IND | TEN | IND | TEN | **TEN** | IND | **IND** ❌✅ |
+| Sun 9/21 | 1:00 PM | CIN | MIN | CIN | CIN | **CIN** | CIN | **MIN** ❌❌ |
+| Sun 9/21 | 1:00 PM | ATL | CAR | ATL | ATL | **ATL** | ATL | **CAR** ❌❌ |
+| Sun 9/21 | 1:00 PM | LAR | PHI | LAR | LAR | **LAR** | PHI | **PHI** ❌✅ |
+| Sun 9/21 | 1:00 PM | GB | CLE | GB | GB | **GB** | GB | **CLE** ❌❌ |
+| Sun 9/21 | 1:00 PM | LV | WSH | LV | LV | **LV** | LV | **WSH** ❌❌ |
+| Sun 9/21 | 1:00 PM | NYJ | TB | TB | TB | **TB** | TB | **TB** ✅✅ |
+| Sun 9/21 | 4:05 PM | DEN | LAC | LAC | LAC | **LAC** | LAC | **LAC** ✅✅ |
+| Sun 9/21 | 4:05 PM | NO | SEA | SEA | SEA | **SEA** | SEA | **SEA** ✅✅ |
+| Sun 9/21 | 4:25 PM | DAL | CHI | DAL | DAL | **DAL** | DAL | **CHI** ✅✅ |
+| Sun 9/21 | 4:25 PM | ARI | SF | SF | SF | **SF** | SF | **SF** ✅✅ |
+| Sun 9/21 | 8:20 PM | KC | NYG | KC | NYG | **NYG** | KC | **KC** ❌✅ |
+| Mon 9/22 | 8:15 PM | DET | BAL | BAL | BAL | **BAL** | BAL | **DET** ❌❌ |
 
 ## Individual Games
 
@@ -132,7 +163,47 @@
 
 ## Week 3 Summary
 
-**Agent Agreement (10 games)**: BUF, HOU, ATL, GB, TB, LAC, SEA, SF, BAL, CIN  
-**Agent Disagreement (5 games)**: NE, TEN, LAR, LV, NYG, DAL *(highlighted in bold)*
+**Agent Agreement (10 games)**: BUF ✅, HOU ❌, ATL ❌, GB ❌, TB ✅, LAC ✅, SEA ✅, SF ✅, BAL ❌, CIN ❌
+- **Agent Agreement Record: 5-5 (50%)**
 
-**Record Prediction**: 12-4 on high/medium confidence games based on agent consensus and injury factors.
+**Agent Disagreement (6 games)**: NE ✅, TEN ❌, LAR ❌, LV ❌, NYG ❌, DAL ✅
+- **Tie-breaker Record: 2-4 (33%)**
+
+**Actual vs Predicted**: 9-7 vs predicted 12-4 (missed by 3 games)
+
+## Performance Analysis
+
+### What We Got Right:
+1. **High-confidence favorites that held**: BUF, TB, SEA, SF (4-0 on these)
+2. **Home teams in close games**: DAL/CHI, NE/PIT situations
+3. **Divisional dynamics**: Some home field advantages played out
+
+### What We Missed:
+1. **Massive Upsets**:
+   - **CLE over GB** - 75% ELO favorite lost (both agents wrong)
+   - **MIN over CIN** - 48-10 blowout opposite of prediction
+   - **CAR over ATL** - 30-0 shutout nobody saw coming
+   - **WSH over LV** - Backup QB narrative was wrong
+
+2. **Sharp Money Failures**:
+   - HOU +1.5 (sharp money) lost to JAX
+   - LAR +4 (sharp money) lost to PHI
+   - LV +2.5 (injury play) lost big to WSH
+
+3. **ELO Model Failures**:
+   - 79% confidence on WSH failed spectacularly
+   - 75% confidence on GB failed
+   - Pick'em games went 2-3
+
+### Key Lessons for Week 4:
+1. **Don't overweight injuries** - WSH dominated with backup QB
+2. **Respect variance** - Week 3 had historic 9 non-offensive TDs
+3. **Home underdogs dangerous** - CLE, CAR both won outright
+4. **Sharp money not always sharp** - Public was right on several games
+5. **High confidence ≠ guarantee** - Even 75%+ favorites can lose
+
+### Statistical Insights:
+- **Favorites Record**: 8-8 (exactly .500)
+- **Home Teams**: 10-6 (62.5% - significant home advantage)
+- **Divisional Games**: Extremely volatile with multiple upsets
+- **Our Disagreements**: You went 2-1, I went 1-2 on our 3 different picks
