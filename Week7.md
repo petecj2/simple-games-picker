@@ -8,20 +8,20 @@
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
 | Thu 10/16 | 8:15 PM | PIT | CIN | PIT | PIT | PIT | CIN | CIN |
-| Sun 10/19 | 9:30 AM | LAR | JAX | LAR | LAR | LAR | JAX |  |
-| Sun 10/19 | 1:00 PM | CAR | NYJ | NYJ | CAR | **CAR** | **CAR** |  |
-| Sun 10/19 | 1:00 PM | MIA | CLE | MIA | CLE | **CLE** | **CLE** |  |
-| Sun 10/19 | 1:00 PM | NE | TEN | NE | NE | NE | NE |  |
-| Sun 10/19 | 1:00 PM | NO | CHI | CHI | CHI | CHI | CHI |  |
-| Sun 10/19 | 1:00 PM | OAK | KC | KC | KC | KC | KC |  |
-| Sun 10/19 | 1:00 PM | PHI | MIN | PHI | No Pick | **PHI** | **PHI** |  |
-| Sun 10/19 | 4:05 PM | IND | LAC | IND | LAC | **LAC** | **LAC** |  |
-| Sun 10/19 | 4:05 PM | NYG | DEN | DEN | DEN | DEN | DEN |  |
-| Sun 10/19 | 4:25 PM | GB | ARI | ARI | GB | **GB** | **GB** |  |
-| Sun 10/19 | 4:25 PM | WSH | DAL | WSH | DAL | **DAL** | **WSH** |  |
-| Sun 10/19 | 8:20 PM | ATL | SF | SF | ATL | **ATL** | **ATL** |  |
-| Mon 10/20 | 7:00 PM | TB | DET | DET | TB | **TB** | **DET** |  |
-| Mon 10/20 | 10:00 PM | HOU | SEA | SEA | SEA | SEA | HOU |  |
+| Sun 10/19 | 9:30 AM | LAR | JAX | LAR | LAR | LAR | JAX | LAR |
+| Sun 10/19 | 1:00 PM | CAR | NYJ | NYJ | CAR | **CAR** | **CAR** | CAR |
+| Sun 10/19 | 1:00 PM | MIA | CLE | MIA | CLE | **CLE** | **CLE** | CLE |
+| Sun 10/19 | 1:00 PM | NE | TEN | NE | NE | NE | NE | NE |
+| Sun 10/19 | 1:00 PM | NO | CHI | CHI | CHI | CHI | CHI | CHI |
+| Sun 10/19 | 1:00 PM | OAK | KC | KC | KC | KC | KC | KC |
+| Sun 10/19 | 1:00 PM | PHI | MIN | PHI | No Pick | **PHI** | **PHI** | PHI |
+| Sun 10/19 | 4:05 PM | IND | LAC | IND | LAC | **LAC** | **LAC** | IND |
+| Sun 10/19 | 4:05 PM | NYG | DEN | DEN | DEN | DEN | DEN | DEN |
+| Sun 10/19 | 4:25 PM | GB | ARI | ARI | GB | **GB** | **GB** | GB |
+| Sun 10/19 | 4:25 PM | WSH | DAL | WSH | DAL | **DAL** | **WSH** | DAL |
+| Sun 10/19 | 8:20 PM | ATL | SF | SF | ATL | **ATL** | **ATL** | SF |
+| Mon 10/20 | 7:00 PM | TB | DET | DET | TB | **TB** | **DET** | DET |
+| Mon 10/20 | 10:00 PM | HOU | SEA | SEA | SEA | SEA | HOU | SEA |
 
 **Bold indicates games where agents disagreed or tiebreaker was needed**
 

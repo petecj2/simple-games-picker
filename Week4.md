@@ -5,22 +5,22 @@
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Thu 9/25 | 8:15 PM | SEA | ARI | ARI | SEA | SEA | SEA |  |
-| Sun 9/28 | 1:00 PM | CAR | NE | NE | NE | NE | NE |  |
-| Sun 9/28 | 1:00 PM | WSH | ATL | WSH | WSH | WSH | WSH |  |
-| Sun 9/28 | 1:00 PM | PHI | TB | PHI | PHI | PHI | PHI |  |
-| Sun 9/28 | 1:00 PM | LAC | NYG | LAC | LAC | LAC | LAC |  |
-| Sun 9/28 | 1:00 PM | NO | BUF | BUF | NO | BUF | BUF |  |
-| Sun 9/28 | 1:00 PM | CLE | DET | DET | DET | DET | DET |  |
-| Sun 9/28 | 1:00 PM | TEN | HOU | HOU | HOU | HOU | HOU |  |
-| Sun 9/28 | 9:30 AM | MIN | PIT | PIT | MIN | MIN | MIN |  |
-| Sun 9/28 | 4:05 PM | IND | LAR | LAR | LAR | LAR | LAR |  |
-| Sun 9/28 | 4:05 PM | JAX | SF | SF | SF | SF | SF |  |
-| Sun 9/28 | 4:25 PM | CHI | LV | LV | CHI | CHI | CHI |  |
-| Sun 9/28 | 4:25 PM | BAL | KC | BAL | BAL | BAL | BAL |  |
-| Sun 9/28 | 4:25 PM | GB | DAL | GB | GB | GB | GB |  |
-| Sun 9/28 | 8:20 PM | NYJ | MIA | MIA | MIA | MIA | MIA |  |
-| Mon 9/29 | 8:15 PM | CIN | DEN | DEN | CIN | CIN | DEN |  |
+| Thu 9/25 | 8:15 PM | SEA | ARI | ARI | SEA | SEA | SEA | SEA |
+| Sun 9/28 | 1:00 PM | CAR | NE | NE | NE | NE | NE | NE |
+| Sun 9/28 | 1:00 PM | WSH | ATL | WSH | WSH | WSH | WSH | ATL |
+| Sun 9/28 | 1:00 PM | PHI | TB | PHI | PHI | PHI | PHI | PHI |
+| Sun 9/28 | 1:00 PM | LAC | NYG | LAC | LAC | LAC | LAC | NYG |
+| Sun 9/28 | 1:00 PM | NO | BUF | BUF | NO | BUF | BUF | BUF |
+| Sun 9/28 | 1:00 PM | CLE | DET | DET | DET | DET | DET | DET |
+| Sun 9/28 | 1:00 PM | TEN | HOU | HOU | HOU | HOU | HOU | HOU |
+| Sun 9/28 | 9:30 AM | MIN | PIT | PIT | MIN | MIN | MIN | PIT |
+| Sun 9/28 | 4:05 PM | IND | LAR | LAR | LAR | LAR | LAR | LAR |
+| Sun 9/28 | 4:05 PM | JAX | SF | SF | SF | SF | SF | JAX |
+| Sun 9/28 | 4:25 PM | CHI | LV | LV | CHI | CHI | CHI | CHI |
+| Sun 9/28 | 4:25 PM | BAL | KC | BAL | BAL | BAL | BAL | KC |
+| Sun 9/28 | 4:25 PM | GB | DAL | GB | GB | GB | GB | TIE |
+| Sun 9/28 | 8:20 PM | NYJ | MIA | MIA | MIA | MIA | MIA | MIA |
+| Mon 9/29 | 8:15 PM | CIN | DEN | DEN | CIN | CIN | DEN | DEN |
 
 ## Individual Games
 
