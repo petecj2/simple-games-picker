@@ -7,7 +7,7 @@
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Thu 10/23 | 8:15 PM | MIN | LAC | LAC | LAC | LAC | LAC |  |
+| Thu 10/23 | 8:15 PM | MIN | LAC | LAC | LAC | LAC | LAC | LAC |
 | Sun 10/26 | 1:00 PM | BUF | CAR | BUF | BUF | BUF | BUF |  |
 | Sun 10/26 | 1:00 PM | SF | HOU | HOU | HOU | HOU | HOU |  |
 | Sun 10/26 | 1:00 PM | CHI | BAL | BAL | BAL | BAL | BAL |  |
