@@ -10,7 +10,7 @@
 | Thu 10/23 | 8:15 PM | MIN | LAC | LAC | LAC | LAC | LAC | LAC |
 | Sun 10/26 | 1:00 PM | BUF | CAR | BUF | BUF | BUF | BUF |  |
 | Sun 10/26 | 1:00 PM | SF | HOU | HOU | HOU | HOU | HOU |  |
-| Sun 10/26 | 1:00 PM | CHI | BAL | BAL | BAL | BAL | BAL |  |
+| Sun 10/26 | 1:00 PM | CHI | BAL | BAL | BAL | **CHI** | BAL |  |
 | Sun 10/26 | 1:00 PM | NYJ | CIN | CIN | CIN | CIN | CIN |  |
 | Sun 10/26 | 1:00 PM | MIA | ATL | ATL | ATL | ATL | ATL |  |
 | Sun 10/26 | 1:00 PM | CLE | NE | NE | NE | NE | NE |  |
@@ -21,7 +21,11 @@
 | Sun 10/26 | 8:20 PM | GB | PIT | GB | GB | GB | GB |  |
 | Mon 10/27 | 8:15 PM | WAS | KC | KC | KC | KC | KC |  |
 
-**All 13 games show agent agreement - no tiebreakers needed this week**
+**Week 8 Picks Summary:**
+- **12 games with complete agent agreement**
+- **1 DISAGREEMENT: CHI @ BAL** - Lamar Jackson ruled OUT, flipping prediction from BAL to CHI
+- Original analysis had full consensus on Ravens -7 with Jackson
+- Updated analysis: Both agents now pick Bears after 4.5-point line movement when Jackson ruled out
 
 ---
 
@@ -238,35 +242,95 @@ The line movement from 49ers -1.5 to Texans -1.5 reflects the market adjusting t
 
 ### **Chicago Bears @ Baltimore Ravens** - Sunday 10/26, 1:00 PM ET (CBS)
 
-**ELO Prediction: Baltimore Ravens -4.5 (66% win probability)**
+**🚨 CRITICAL INJURY UPDATE: LAMAR JACKSON RULED OUT 🚨**
 
-The ELO system clearly favors Baltimore:
-- Ravens -4.5 with 66% win probability
-- Ravens rated significantly higher despite home field being part of spread
-- Bears (3-4) showing inconsistency
-- Ravens (4-3) stronger team
+**Backup QB Starting:** Tyler Huntley will start for Baltimore
 
-**Betting Prediction: Baltimore Ravens -7**
+---
 
-The betting markets are more confident in Baltimore than ELO:
-- Current Spread: Ravens -7 (opened -6, moved to -6.5, now -7)
-- Line movement toward Ravens indicates sharp money backing them
-- Total: 49.5 (down from opener of 50)
-- Bears are one of two most popular underdogs in Week 8 (public backing them)
+**ORIGINAL ELO Prediction (with Lamar Jackson): Baltimore Ravens -4.5 (66% win probability)**
 
-**Sharp Money Analysis:**
-- Line moved from -6 to -7, showing sharp action on Ravens
-- Public backing Bears +7 heavily
-- Classic sharp vs public scenario favoring Ravens
-- Bears popular underdog but line moving against them
+**UPDATED ELO Assessment (with Tyler Huntley):**
+- **Adjusted Spread: Chicago -3.0** (flipped from BAL -4.5)
+- **Adjusted Win Probability: Chicago 60-65%**
+- **QB Value Impact: 7.5 points** (Lamar Jackson's dual-threat ability is irreplaceable)
 
-**Key Injuries:**
-- Ravens: Lamar Jackson questionable but expected to play
-- If Jackson sits, this analysis changes significantly
+The ELO system originally favored Baltimore by 4.5 points with Jackson playing. With Jackson out and Tyler Huntley starting, we must adjust for the loss of a 2-time MVP whose unique dual-threat ability is impossible to replicate. Jackson's value to Baltimore's offense is worth approximately 7.5 points, completely flipping this game.
 
-**Analysis:** Both agents agree on Ravens. ELO shows 66% probability at -4.5, betting shows even more confidence at -7 with line movement toward Ravens despite public money on Bears. Classic sharp play.
+**Why Jackson's Impact is So Large:**
+- Ravens' entire offensive scheme built around his running ability
+- Defense must account for QB runs on every play, opening up the passing game
+- Derrick Henry's effectiveness depends on play-action threat from mobile QB
+- Huntley cannot execute the read-option and designed runs that define Baltimore's identity
 
-**Final Selection: Baltimore Ravens**
+---
+
+**ORIGINAL Betting Prediction (with Jackson): Ravens -7**
+
+**UPDATED Betting Line (Jackson OUT):**
+- **Current Spread: Ravens -2.5**
+- **Moneyline: Ravens -155 / Bears +135**
+- **Total: 44.5** (down 4-6 points from original 48.5-50.5)
+
+**Massive Line Movement:**
+- Line moved **4-4.5 points** from Ravens -6.5/-7 to Ravens -2.5 when Jackson ruled out
+- Total dropped **4-6 points** reflecting expected offensive struggles
+- This confirms the market values Lamar Jackson at approximately 4-5 points of spread value
+
+**Updated Sharp Money Analysis:**
+- **Bears 4-2 ATS this season (66.7%)** - one of best in NFL
+- **Ravens 1-5 ATS this season** - worst cover percentage in NFL
+- **Ravens without Jackson since 2020: 3-12 SU (20%), 5-10 ATS (33%)**
+- **Recent backup QB results:** Ravens went 0-2 with Cooper Rush, scoring only 13 total points in those games
+- **Reverse line movement detected** - line moving against public betting suggests sharp money on Bears
+
+**Historical Context:**
+- Ravens scored only **13 total points** in 2 games without Jackson earlier this season
+- Tyler Huntley making his **first start of 2025** - no game reps this season
+- Ravens are **1-5 on the season overall**, showing struggles even with Jackson
+
+---
+
+**UPDATED ANALYSIS - AGENT DISAGREEMENT:**
+
+**Original Prediction:** Both agents agreed on Ravens -7 with Jackson playing
+
+**Updated Picks:**
+- **ELO Agent (adjusted): Chicago Bears** (60-65% win probability after 7.5-point Jackson adjustment)
+- **Betting Agent: Chicago Bears +2.5** (5-star value play given historical data)
+- **Methodology Tiebreaker: Chicago Bears**
+
+**Why This Is Now a Bears Pick:**
+
+1. **Historical Disaster Without Jackson:** Ravens are 3-12 SU (20%) and 5-10 ATS (33%) without their franchise QB since 2020
+
+2. **Recent Backup QB Futility:** Ravens scored only 13 points in 2 games without Jackson this season (0-2 record)
+
+3. **Ravens' ATS Struggles:** At 1-5 ATS, Ravens are the worst covering team in the NFL this season
+
+4. **Bears' Momentum:** Chicago is 4-1 SU and 4-1 ATS in their last 5 games, playing excellent football
+
+5. **Huntley's Uncertainty:** This is his first start of 2025 with no game reps - unknown quantity
+
+6. **Offensive Scheme Collapse:** Baltimore's offense is entirely built around Jackson's dual-threat ability. With Huntley, they become predictable and one-dimensional
+
+7. **Sharp Money Indicators:** Line movement and betting percentages suggest professional money backing Chicago
+
+**Game Script Projection:**
+Ravens will attempt to lean on Derrick Henry, but without Jackson's run threat, Bears can load the box. Baltimore's offense becomes predictable. Chicago only needs to avoid turnovers and play competent football to win this game. Expected final: Bears 20, Ravens 17.
+
+---
+
+**FINAL UPDATED SELECTION: Chicago Bears**
+
+**Confidence Level: HIGH (8/10)**
+
+This injury fundamentally transforms the game. Lamar Jackson is worth approximately 7.5 points of spread value due to his irreplaceable dual-threat ability. The Bears are getting 2.5 points when they should likely be favored by 3. Combined with Baltimore's 1-5 ATS record, 3-12 record without Jackson since 2020, and recent backup QB failures (13 points in 2 games), this becomes a strong value play on Chicago.
+
+**Recommended Plays:**
+- Bears +2.5 (primary)
+- Bears ML +135 (value on outright win)
+- Under 44.5 (Ravens' offense will struggle)
 
 ---
 
