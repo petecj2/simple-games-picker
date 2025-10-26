@@ -10,7 +10,7 @@
 | Thu 10/23 | 8:15 PM | MIN | LAC | LAC | LAC | LAC | LAC | LAC |
 | Sun 10/26 | 1:00 PM | BUF | CAR | BUF | BUF | BUF | BUF |  |
 | Sun 10/26 | 1:00 PM | SF | HOU | HOU | HOU | HOU | HOU |  |
-| Sun 10/26 | 1:00 PM | CHI | BAL | BAL | BAL | **CHI** | BAL |  |
+| Sun 10/26 | 1:00 PM | CHI | BAL | BAL | BAL | **CHI** | **CHI** |  |
 | Sun 10/26 | 1:00 PM | NYJ | CIN | CIN | CIN | CIN | CIN |  |
 | Sun 10/26 | 1:00 PM | MIA | ATL | ATL | ATL | ATL | ATL |  |
 | Sun 10/26 | 1:00 PM | CLE | NE | NE | NE | NE | NE |  |
@@ -22,10 +22,11 @@
 | Mon 10/27 | 8:15 PM | WAS | KC | KC | KC | KC | KC |  |
 
 **Week 8 Picks Summary:**
-- **12 games with complete agent agreement**
-- **1 DISAGREEMENT: CHI @ BAL** - Lamar Jackson ruled OUT, flipping prediction from BAL to CHI
-- Original analysis had full consensus on Ravens -7 with Jackson
-- Updated analysis: Both agents now pick Bears after 4.5-point line movement when Jackson ruled out
+- **All 13 games now show complete agreement after Jackson injury update**
+- **CHI @ BAL:** Lamar Jackson ruled OUT, flipping prediction from BAL to CHI
+  - Original analysis: Full consensus on Ravens -7 with Jackson playing
+  - Updated analysis: Full consensus on Bears after 4.5-point line movement
+  - Both Claude and Pete switched picks from BAL to CHI after injury news
 
 ---
 
@@ -291,14 +292,15 @@ The ELO system originally favored Baltimore by 4.5 points with Jackson playing. 
 
 ---
 
-**UPDATED ANALYSIS - AGENT DISAGREEMENT:**
+**UPDATED ANALYSIS - FULL CONSENSUS ON BEARS:**
 
 **Original Prediction:** Both agents agreed on Ravens -7 with Jackson playing
 
 **Updated Picks:**
 - **ELO Agent (adjusted): Chicago Bears** (60-65% win probability after 7.5-point Jackson adjustment)
 - **Betting Agent: Chicago Bears +2.5** (5-star value play given historical data)
-- **Methodology Tiebreaker: Chicago Bears**
+- **Claude's Pick: Chicago Bears**
+- **Pete's Pick: Chicago Bears** (switched from BAL after Jackson ruled out)
 
 **Why This Is Now a Bears Pick:**
 
