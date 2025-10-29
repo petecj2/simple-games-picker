@@ -29,56 +29,35 @@
 
 ## Synopsis of Week 2 Picks
 
-### Pete Picks
-- **Thursday**: Packers over Commanders (already played)
-- **Sunday Early**: 
-  - Bengals over Jaguars
-  - Cowboys over Giants (but downgraded confidence due to early-season pressure)
-  - Lions over Bears  
-  - Rams over Titans
-  - Dolphins over Patriots
-  - 49ers over Saints
-  - Bills over Jets
-  - Steelers over Seahawks
-  - Ravens over Browns
-- **Sunday Late**: 
-  - Cardinals over Panthers
-  - Broncos over Colts
-  - Eagles over Chiefs
-- **Sunday Night**: Vikings over Falcons
-- **Monday Night**: Texans over Buccaneers, Chargers over Raiders
+| Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
+|------|------|-----------|-----------|-----|---------|--------|------|--------|
+| Thu 9/11 | 8:15 PM | WSH | GB | GB | GB | GB | GB | GB |
+| Sun 9/14 | 1:00 PM | JAX | CIN | CIN | CIN | CIN | CIN | CIN |
+| Sun 9/14 | 1:00 PM | NYG | DAL | DAL | DAL | DAL | DAL | DAL |
+| Sun 9/14 | 1:00 PM | CHI | DET | DET | DET | DET | DET | DET |
+| Sun 9/14 | 1:00 PM | LAR | TEN | LAR | LAR | LAR | LAR | TEN |
+| Sun 9/14 | 1:00 PM | NE | MIA | MIA | MIA | MIA | MIA | MIA |
+| Sun 9/14 | 1:00 PM | SF | NO | NO | SF | NO | SF | NO |
+| Sun 9/14 | 1:00 PM | BUF | NYJ | BUF | BUF | BUF | BUF | NYJ |
+| Sun 9/14 | 1:00 PM | SEA | PIT | PIT | PIT | PIT | PIT | PIT |
+| Sun 9/14 | 1:00 PM | CLE | BAL | BAL | BAL | BAL | BAL | BAL |
+| Sun 9/14 | 4:05 PM | CAR | ARI | ARI | ARI | ARI | ARI | ARI |
+| Sun 9/14 | 4:05 PM | DEN | IND | IND | DEN | IND | DEN | IND |
+| Sun 9/14 | 4:25 PM | PHI | KC | KC | PHI | KC | PHI | KC |
+| Sun 9/14 | 8:20 PM | ATL | MIN | MIN | MIN | MIN | MIN | MIN |
+| Mon 9/15 | 7:00 PM | TB | HOU | HOU | HOU | HOU | HOU | HOU |
+| Mon 9/15 | 10:00 PM | LAC | LV | LAC | LAC | LAC | LAC | LAC |
 
-### Game Winners (Updated with Early-Season Analysis)
-- **Thursday**: Packers over Commanders (already played)
-- **Sunday Early**: 
-  - Bengals over Jaguars
-  - Cowboys over Giants (but downgraded confidence due to early-season pressure)
-  - Lions over Bears  
-  - **Titans over Rams** (upset)
-  - Dolphins over Patriots
-  - **Saints over 49ers** (upset)
-  - **Jets over Bills** (upset)
-  - **Steelers over Seahawks**
-  - Ravens over Browns
-- **Sunday Late**: 
-  - **Cardinals over Panthers**
-  - **Colts over Broncos** (upset)
-  - **Chiefs over Eagles** (upset)
-- **Sunday Night**: **Vikings over Falcons**
-- **Monday Night**: Texans over Buccaneers, Chargers over Raiders
+**Week 2 Performance:**
+- **ELO Agent: 10-6 (62.5%)**
+- **Betting Agent: 10-6 (62.5%)**
+- **Claude's Picks: 9-7 (56.3%)**
+- **Pete's Picks: 11-5 (68.8%)**
 
-### Confidence (Adjusted for Early-Season Factors)
-- **High Confidence**: Ravens over Browns, Lions over Bears, **Lions over Buccaneers**
-- **Medium Confidence**: Vikings over Falcons, Saints over Cowboys, Texans over Buccaneers, Chargers over Raiders, Cardinals over Rams, Bengals over Chiefs
-- **Low Confidence**: Titans over Jets, Patriots over Seahawks, Steelers over Broncos, Colts over Packers, **Commanders over Giants**
-
-### Key Predictions (Updated)
-- **High Confidence (3)**: Ravens -11.5, Lions -6.5, Lions vs Bucs (new)
-- **Early-Season Value Plays (4)**: Saints +3.5, Titans +7, Patriots +6, Commanders +2.5
-- **Traditional Value Plays (4)**: Vikings +3, Cardinals +4.5, Bengals +2.5, Colts (home)
-- **Upset Alerts (5)**: Saints over Cowboys, Titans over Jets, Patriots over Seahawks, Vikings over 49ers, Cardinals over Rams
-
-### Record Prediction: 11-5 on high/medium confidence games (improved with early-season insights)
+**Key Differences:**
+- Claude picked NO, IND, KC where Pete picked SF, DEN, PHI
+- Pete went 1-2 on those disagreements (only IND was correct)
+- Claude's contrarian plays (NO, KC) mostly failed
 
 ---
 

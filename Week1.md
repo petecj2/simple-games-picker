@@ -24,28 +24,33 @@ Pete's overrides were perfect (3-0), correcting picks on Bengals > Browns, Cardi
 
 ## Synopsis of Week 1 Picks
 
-### Pete's Selections
-- Eagles, Chargers, Falcons, Bengals, Dolphins, Patriots, Cardinals, Steelers, Commanders, Jaguars, Broncos, Seahawks, Packers, Rams, Bills, Vikings
+| Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
+|------|------|-----------|-----------|-----|---------|--------|------|--------|
+| Thu 9/4 | 8:20 PM | DAL | PHI | PHI | PHI | PHI | PHI | PHI |
+| Fri 9/5 | 8:00 PM | KC | LAC | KC | LAC | LAC | LAC | LAC |
+| Sun 9/7 | 1:00 PM | TB | ATL | ATL | ATL | ATL | ATL | ATL |
+| Sun 9/7 | 1:00 PM | CIN | CLE | CLE | CLE | CLE | CIN | CLE |
+| Sun 9/7 | 1:00 PM | MIA | IND | IND | MIA | MIA | MIA | MIA |
+| Sun 9/7 | 1:00 PM | LV | NE | NE | NE | NE | NE | NE |
+| Sun 9/7 | 1:00 PM | ARI | NO | NO | NO | NO | ARI | NO |
+| Sun 9/7 | 1:00 PM | PIT | NYJ | NYJ | NYJ | NYJ | PIT | NYJ |
+| Sun 9/7 | 1:00 PM | NYG | WSH | WSH | WSH | WSH | WSH | WSH |
+| Sun 9/7 | 1:00 PM | CAR | JAX | JAX | JAX | JAX | JAX | JAX |
+| Sun 9/7 | 4:05 PM | TEN | DEN | DEN | DEN | DEN | DEN | DEN |
+| Sun 9/7 | 4:05 PM | SF | SEA | SF | SEA | SEA | SEA | SEA |
+| Sun 9/7 | 4:25 PM | DET | GB | GB | GB | GB | GB | GB |
+| Sun 9/7 | 4:25 PM | HOU | LAR | LAR | LAR | LAR | LAR | LAR |
+| Sun 9/7 | 8:20 PM | BAL | BUF | BUF | BUF | BUF | BUF | BUF |
+| Mon 9/8 | 8:15 PM | MIN | CHI | CHI | MIN | MIN | MIN | MIN |
 
-### Game Winners
-- **Thursday**: Eagles over Cowboys
-- **Friday**: Chargers over Chiefs (Brazil)
-- **Sunday Early**: Falcons, Browns, Dolphins, Patriots, Saints, Jets, Commanders, Jaguars
-- **Sunday Late**: Broncos, Seahawks, Packers, Rams
-- **Sunday Night**: Bills over Ravens
-- **Monday Night**: Vikings over Bears
+**Week 1 Performance:**
+- **ELO Agent: 10-6 (62.5%)**
+- **Betting Agent: 11-5 (68.8%)**
+- **Claude's Picks: 10-6 (62.5%)**
+- **Pete's Picks: 12-4 (75.0%)**
 
-### Confidence
-- **High Confidence**: Eagles over Cowboys, Saints over Cardinals, Jaguars over Panthers
-- **Medium Confidence**: Browns over Bengals, Dolphins over Colts, Jets over Steelers, Broncos over Titans, Seahawks over 49ers, Packers over Lions, Bills over Ravens, Chargers over Chiefs, Vikings over Bears
-- **Low Confidence**: Falcons over Buccaneers, Patriots over Raiders, Commanders over Giants, Rams over Texans
-
-### Key Predictions
-- **High Confidence (3)**: Eagles, Jaguars, Saints
-- **Value Plays (3)**: Chargers +3, Dolphins +1.5, Jets +3
-- **Upset Alerts (3)**: Chargers in Brazil, Seahawks at home, Jets with talent upgrade
-
-### Record Prediction: 11-5 on high/medium confidence games
+**Key Differences:**
+- Pete correctly picked CIN, ARI, and PIT where Claude picked CLE, NO, and NYJ (3-0 on disagreements)
 
 ## Executive Summary
 Week 1 presents a unique mix of marquee matchups and potential value opportunities. The Eagles-Cowboys Thursday night opener headlines the week with the largest spread, while 11 games feature spreads of 3 points or less, indicating significant market uncertainty. Key injury concerns and sharp betting market indicators provide additional edges for informed decision-making.
