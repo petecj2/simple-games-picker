@@ -1,0 +1,71 @@
+{
+  "bye_week_advantage": {
+    "points": 3.0,
+    "research_ats": "32-16 (66.7%)",
+    "confidence": 8,
+    "description": "Road favorites vs divisional opponents after bye week",
+    "source": "VSiN Research 2002-present",
+    "apply_when": "team_off_bye AND opponent_not_off_bye"
+  },
+  "extreme_travel": {
+    "miles_threshold": 2000,
+    "timezone_threshold": 3,
+    "points": -2.0,
+    "confidence": 6,
+    "description": "Away team traveling >2000 miles with 3+ timezone change",
+    "source": "CBS Sports Travel Analysis",
+    "apply_when": "travel_miles > 2000 AND abs(timezone_change) >= 3"
+  },
+  "moderate_travel": {
+    "miles_threshold": 1500,
+    "timezone_threshold": 2,
+    "points": -1.0,
+    "confidence": 4,
+    "description": "Away team traveling >1500 miles with 2+ timezone change",
+    "apply_when": "travel_miles > 1500 AND abs(timezone_change) >= 2"
+  },
+  "revenge_game": {
+    "points": 1.5,
+    "confidence": 4,
+    "description": "Team facing opponent that beat them earlier this season",
+    "source": "Situational handicapping research",
+    "apply_when": "rematch AND lost_previous_meeting"
+  },
+  "playoff_desperation": {
+    "points": 2.5,
+    "week_threshold": 15,
+    "confidence": 7,
+    "description": "Playoff-bound team in must-win vs eliminated opponent",
+    "source": "Late-season motivation analysis",
+    "apply_when": "week >= 15 AND team_playoff_odds > 20 AND opponent_playoff_odds < 5"
+  },
+  "lookahead_spot": {
+    "points": -2.0,
+    "confidence": 5,
+    "description": "Team with huge rivalry/playoff game next week",
+    "source": "Trap game analysis",
+    "apply_when": "next_week_game_importance > 8"
+  },
+  "primetime_edge": {
+    "ats_threshold": 0.60,
+    "points": 1.0,
+    "confidence": 5,
+    "description": "Team with strong primetime ATS record (>60%)",
+    "source": "Pro Football Reference historical data",
+    "apply_when": "is_primetime AND team_primetime_ats > 0.60"
+  },
+  "short_week_disadvantage": {
+    "points": -1.5,
+    "confidence": 6,
+    "description": "Team playing on Thursday after Sunday game",
+    "source": "Thursday Night Football analysis",
+    "apply_when": "days_since_last_game <= 4"
+  },
+  "division_game_home": {
+    "points": 1.0,
+    "confidence": 5,
+    "description": "Home team in divisional matchup (familiarity advantage)",
+    "source": "Divisional game trends",
+    "apply_when": "is_divisional AND is_home_team"
+  }
+}

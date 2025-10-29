@@ -1,0 +1,38 @@
+{
+  "ats_performance": {
+    "minimum_ats_percentage": 0.60,
+    "minimum_sample_size": 20,
+    "high_confidence_ats": 0.67,
+    "description": "Thresholds for research-backed ATS performance"
+  },
+  "situational_score_thresholds": {
+    "override_threshold": 3.0,
+    "strong_tiebreaker_threshold": 2.0,
+    "weak_tiebreaker_threshold": 1.0,
+    "description": "Point thresholds for situational edge application"
+  },
+  "confidence_calibration": {
+    "high_confidence_min": 8,
+    "medium_confidence_min": 5,
+    "low_confidence_min": 1,
+    "description": "Confidence level ranges (1-10 scale)"
+  },
+  "travel_thresholds": {
+    "extreme_miles": 2000,
+    "moderate_miles": 1500,
+    "significant_timezone_change": 3,
+    "moderate_timezone_change": 2,
+    "description": "Travel distance and timezone change thresholds"
+  },
+  "playoff_race_thresholds": {
+    "must_win_week": 15,
+    "playoff_contender_odds_min": 20.0,
+    "eliminated_odds_max": 5.0,
+    "description": "Week and playoff probability thresholds for motivation factors"
+  },
+  "data_quality": {
+    "max_days_stale": 7,
+    "require_complete_data": true,
+    "description": "Data freshness and completeness requirements"
+  }
+}
