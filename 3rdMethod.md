@@ -894,3 +894,574 @@ Most importantly, a three-way agreement (ELO + Betting + Analytics all aligned) 
 
 *Research compiled October 29, 2025*
 *Key sources: FTN Fantasy (DVOA), NFL research papers (EPA), VSiN (situational trends), ESPN (efficiency metrics)*
+
+---
+
+## APPENDIX: Situational Handicapping Implementation Plan
+
+*Detailed implementation guide for Option 2: Situational Handicapping Agent*
+
+### Overview
+
+This appendix provides a complete technical implementation plan for building a Situational Handicapping system using Python scripts, SQLite database, and Claude Code subagents. The system will track bye weeks, travel distance, playoff standings, revenge games, and motivation factors to identify situational edges.
+
+---
+
+### Python Scripts Required
+
+#### 1. Data Collection Scripts
+
+**`scrape_bye_weeks.py`**
+- **Purpose:** Scrape TeamRankings.com for bye week ATS trends
+- **Output:** CSV with historical performance after bye weeks
+- **Frequency:** Once at season start, then check for updates
+- **Data Collected:**
+  - Team name
+  - Bye week number
+  - Historical ATS record after bye
+  - Sample size
+
+**`scrape_schedule.py`**
+- **Purpose:** Scrape ESPN API or Pro Football Reference for full season schedule
+- **Extract:** Dates, times, locations, kickoff times
+- **Output:** SQLite database with all game metadata
+- **Frequency:** Once at season start (pre-season)
+- **Data Schema:**
+  ```sql
+  games (
+    game_id, week, date, time,
+    home_team, away_team, venue,
+    is_primetime, is_divisional,
+    home_score, away_score
+  )
+  ```
+
+**`calculate_travel.py`**
+- **Input:** Stadium coordinates (hard-coded dictionary of all 32 teams)
+- **Calculate:**
+  - Great circle distance between teams for each game
+  - Time zone changes (3-hour, 2-hour, 1-hour, none)
+- **Output:** Add `travel_miles` and `timezone_change` columns to games database
+- **Frequency:** Once after schedule scraped
+- **Implementation:** Uses haversine formula for distance calculation
+
+**`scrape_standings.py`**
+- **Purpose:** Scrape ESPN standings page weekly
+- **Extract:** W-L records, division position, playoff odds (if available)
+- **Output:** Update teams database with current standings
+- **Frequency:** Weekly (Tuesday after Monday Night Football)
+- **Data Collected:**
+  - Current record (wins, losses)
+  - Division rank
+  - Playoff probability (if scrapable)
+  - Games behind leader
+
+**`track_revenge_games.py`**
+- **Input:** Season schedule + previous game results
+- **Logic:** Identify if Team A already played Team B this season
+- **Output:** Boolean flag for `revenge_game` in database
+- **Frequency:** Weekly as games complete
+- **Note:** Only applicable Week 10+ when rematches occur
+
+**`scrape_primetime_records.py`**
+- **Purpose:** Scrape Pro Football Reference or build from game logs
+- **Track:** Each team's SNF/MNF/TNF record (SU and ATS)
+- **Output:** Team-level primetime performance table
+- **Frequency:** Weekly update or one-time historical build
+- **Data:**
+  - Team
+  - Primetime SU record
+  - Primetime ATS record
+  - By game type (SNF, MNF, TNF)
+
+#### 2. Analysis/Calculation Scripts
+
+**`calculate_situational_score.py`**
+- **Input:** Game from schedule database
+- **Calculate situational adjustments based on:**
+  - Bye week advantage (Team A off bye, Team B not = +3 pts)
+  - Travel disadvantage (>2000 miles + 3 time zones = -2 pts)
+  - Revenge game motivation (+1-2 pts)
+  - Playoff desperation (must-win vs eliminated = +2-3 pts)
+  - Lookahead spot (big game next week = -2 pts)
+  - Primetime performance edge (+1 pt if team excels in SNF/MNF)
+- **Output:** Situational adjustment score (-5 to +5 range)
+- **Frequency:** Wednesday for upcoming week's games
+
+**`generate_predictions.py`**
+- **Input:** Week's games + base ELO spreads + situational adjustments
+- **Logic:**
+  - If situational edge ≥ 3 points, pick that team
+  - If situational edge < 3 points, defer to ELO or abstain
+- **Output:** Predictions for the week in markdown format
+- **Frequency:** Friday afternoon (after injury reports)
+
+#### 3. Database/Utility Scripts
+
+**`init_database.py`**
+- **Purpose:** Create SQLite database schema
+- **Tables:**
+  ```sql
+  -- Core tables
+  teams (
+    team_id, name, abbreviation,
+    stadium_lat, stadium_lon,
+    division, conference
+  )
+
+  games (
+    game_id, week, date, time,
+    home_team_id, away_team_id,
+    venue, travel_miles, timezone_change,
+    is_primetime, is_divisional, is_revenge,
+    home_score, away_score
+  )
+
+  bye_weeks (
+    team_id, bye_week_number, season
+  )
+
+  standings (
+    team_id, week, wins, losses,
+    division_rank, playoff_odds,
+    updated_date
+  )
+
+  situational_trends (
+    situation_type, description,
+    ats_record, sample_size,
+    confidence, source
+  )
+
+  primetime_records (
+    team_id, game_type,
+    su_wins, su_losses,
+    ats_wins, ats_losses, ats_pushes
+  )
+  ```
+- **Frequency:** Once at project setup
+
+**`update_game_results.py`**
+- **Input:** Week's completed games
+- **Update:** games table with actual scores
+- **Calculate:** ATS results for performance tracking
+- **Frequency:** Weekly after games complete (Monday/Tuesday)
+
+**`export_weekly_report.py`**
+- **Purpose:** Generate markdown report for the week
+- **Include:** All games, situational scores, predictions, confidence levels
+- **Format:** Similar to current Week files
+- **Frequency:** Friday before games
+
+---
+
+### Claude Code Subagent Prompts
+
+#### Agent 1: `situational-data-collector`
+
+**Purpose:** Collects all situational handicapping data for the week
+
+**Prompt File:** `.claude/agents/situational-data-collector.md`
+
+```markdown
+You are a data collection agent for NFL situational handicapping. For the specified week:
+
+1. Run scrape_standings.py to get current standings
+2. Run calculate_travel.py for this week's games (if not already done)
+3. Run track_revenge_games.py to identify revenge spots
+4. Check if any teams are coming off bye weeks this week
+5. Identify primetime games (SNF, MNF, TNF)
+6. Update the games database with all situational metadata
+
+Output a summary of:
+- Teams on bye this week and next week (for lookahead)
+- Games with significant travel (>1500 miles or 2+ time zones)
+- Revenge game opportunities
+- Teams in must-win situations (playoff implications)
+- Primetime games with team-specific performance data
+
+Store all data in the SQLite database and report any data collection issues.
+```
+
+#### Agent 2: `situational-analyzer`
+
+**Purpose:** Analyzes situational edges for the week's games
+
+**Prompt File:** `.claude/agents/situational-analyzer.md`
+
+```markdown
+You are a situational analysis agent for NFL game prediction. Using the populated database:
+
+1. For each game this week, run calculate_situational_score.py
+2. Identify high-confidence situational angles:
+   - Bye week advantages (backed by research: 66-69% ATS)
+   - Extreme travel disadvantages
+   - Playoff desperation vs eliminated teams
+   - Revenge games with strong motivation
+3. Compare situational edges to base ELO spreads
+4. Flag games where situational edge ≥ 3 points
+
+Output a ranked list of games by situational edge strength:
+- Strong edges (≥4 points): These override ELO/Betting
+- Medium edges (2-3 points): Use as tiebreakers
+- Weak edges (<2 points): Defer to other agents
+
+For each strong edge, provide:
+- The specific situational factor(s) driving the edge
+- Historical research backing (cite ATS records)
+- Confidence level (1-10)
+- Recommended pick
+```
+
+#### Agent 3: `motivation-scout`
+
+**Purpose:** Manually assesses motivation and intangible factors
+
+**Prompt File:** `.claude/agents/motivation-scout.md`
+
+```markdown
+You are a motivation analysis agent. For this week's games, research and assess:
+
+1. **Playoff Race Impact:**
+   - Check current standings and remaining schedules
+   - Identify must-win games for playoff-bound teams
+   - Identify games involving eliminated teams (low motivation)
+
+2. **Narrative Factors:**
+   - Coaching hot seat situations (desperation)
+   - Recent embarrassing losses (revenge/pride)
+   - Division rivalry intensity
+   - Quarterback matchup storylines
+
+3. **Lookahead Spots:**
+   - Check next week's schedule for all teams
+   - Flag teams with huge rivalry/playoff game next week
+   - Assess if current game is "trap game"
+
+4. **Emotional Context:**
+   - Teams coming off huge emotional wins (letdown risk)
+   - Teams coming off devastating losses (bounce-back or spiral?)
+   - Primetime stage - which teams thrive under lights?
+
+Output a narrative assessment for each game where motivation is a factor.
+Rate motivation differential on -3 to +3 scale:
+- +3: Massive motivation advantage (desperate playoff team vs eliminated)
+- 0: Even motivation
+- -3: Significant motivation disadvantage (lookahead trap)
+
+Do not quantify with precise numbers unless backed by data. Focus on qualitative
+assessment that complements the quantitative situational score.
+```
+
+#### Agent 4: `situational-integrator`
+
+**Purpose:** Combines situational analysis with ELO and Betting agent picks
+
+**Prompt File:** `.claude/agents/situational-integrator.md`
+
+```markdown
+You are the final decision agent for situational handicapping integration. You have:
+
+1. ELO agent pick and spread
+2. Betting agent pick and spread
+3. Situational score (from calculate_situational_score.py)
+4. Motivation assessment (from motivation-scout agent)
+
+For each game, apply this decision tree:
+
+IF situational_score >= 4 AND backed by research (66%+ ATS):
+  → OVERRIDE other agents, pick the situational edge
+  → Confidence: HIGH
+
+ELIF situational_score >= 3:
+  → Use situational as STRONG tiebreaker if ELO/Betting disagree
+  → If ELO/Betting agree against situational, note the conflict
+
+ELIF situational_score >= 2:
+  → Use as WEAK tiebreaker
+  → Defer to agent agreement
+
+ELSE:
+  → Ignore situational factors, use ELO/Betting only
+
+Special cases:
+- BYE WEEK angles (research shows 66.7% ATS) = always consider strongly
+- EXTREME TRAVEL (>2000 miles + 3 time zones) = significant factor
+- PLAYOFF DESPERATION in Week 15+ = major factor
+
+Output final picks with reasoning:
+- Which agent(s) you followed and why
+- Situational factors that influenced decision
+- Confidence level (1-10)
+- Any conflicts/disagreements noted
+
+Format output as markdown for easy insertion into weekly prediction file.
+```
+
+---
+
+### Weekly Workflow
+
+#### Tuesday (Data Collection Day)
+1. **Automated:** `situational-data-collector` agent runs all scraping scripts
+2. **Automated:** Database updated with latest standings, results
+3. **Manual:** Check news for coaching changes, major injuries affecting motivation
+
+#### Wednesday (Analysis Day)
+1. **Automated:** `situational-analyzer` agent calculates all situational scores
+2. **Semi-automated:** `motivation-scout` agent researches qualitative factors
+3. **Manual:** Review agent outputs, add context from news/social media
+
+#### Friday (Decision Day)
+1. **Input:** Wait for ELO and Betting agent picks (from main system)
+2. **Automated:** `situational-integrator` agent combines all three methods
+3. **Output:** Generate final predictions with situational overlays
+4. **Export:** Export to weekly markdown file
+
+#### Monday (Results & Learning)
+1. **Automated:** `update_game_results.py` records actual outcomes
+2. **Analysis:** Track which situational edges worked vs. failed
+3. **Update:** Update situational_trends table with new data
+4. **Calibration:** Adjust confidence in various situational factors
+
+---
+
+### File Structure
+
+```
+/situational-handicapping/
+├── data/
+│   ├── nfl_games.db                    # SQLite database
+│   ├── stadium_coordinates.json        # All 32 team coordinates
+│   ├── bye_week_schedule.csv          # 2025 bye weeks
+│   └── weekly_exports/
+│       ├── week1_situational.md
+│       ├── week2_situational.md
+│       └── ...
+├── scripts/
+│   ├── collection/
+│   │   ├── scrape_bye_weeks.py
+│   │   ├── scrape_schedule.py
+│   │   ├── scrape_standings.py
+│   │   ├── scrape_primetime_records.py
+│   │   └── track_revenge_games.py
+│   ├── calculation/
+│   │   ├── calculate_travel.py
+│   │   ├── calculate_situational_score.py
+│   │   └── generate_predictions.py
+│   ├── database/
+│   │   ├── init_database.py
+│   │   ├── update_game_results.py
+│   │   └── query_helpers.py
+│   └── utils/
+│       ├── export_weekly_report.py
+│       └── validation.py
+├── .claude/
+│   └── agents/
+│       ├── situational-data-collector.md
+│       ├── situational-analyzer.md
+│       ├── motivation-scout.md
+│       └── situational-integrator.md
+├── config/
+│   ├── situational_weights.json        # Point adjustments by factor
+│   └── research_thresholds.json        # ATS thresholds for confidence
+└── README.md
+```
+
+---
+
+### Key Design Decisions
+
+#### 1. Database vs Files
+- **SQLite database** for structured queries and relationships
+- **CSV exports** for manual review and backup
+- **Markdown reports** for weekly predictions (human-readable)
+
+#### 2. Automation vs Manual
+- **Automate:** Data scraping, distance calculations, score calculations
+- **Manual:** Motivation assessment, news monitoring, edge cases
+- **Semi-auto:** Agent reviews output, human validates and approves
+
+#### 3. Integration Points
+- Situational system outputs adjustments (-5 to +5 points)
+- These adjustments added to or compared with ELO spreads
+- Strong situational edges (≥3 pts) can override agent agreement
+- Weak edges (<2 pts) used only as tiebreakers
+
+#### 4. Research-Backed Thresholds
+- Only apply situational adjustments backed by research (>60% ATS)
+- Track performance of each situational factor weekly
+- Adjust weights based on actual 2025 results
+- Maintain `situational_trends` table for historical validation
+
+#### 5. Confidence Calibration
+- **High confidence (8-10):** Bye week edges, extreme travel with research backing
+- **Medium confidence (5-7):** Revenge games, mild travel, playoff implications
+- **Low confidence (1-4):** Qualitative motivation factors, narratives
+
+---
+
+### Configuration Files
+
+#### `config/situational_weights.json`
+
+```json
+{
+  "bye_week_advantage": {
+    "points": 3.0,
+    "research_ats": "32-16 (66.7%)",
+    "confidence": 8
+  },
+  "extreme_travel": {
+    "miles_threshold": 2000,
+    "timezone_threshold": 3,
+    "points": -2.0,
+    "confidence": 6
+  },
+  "revenge_game": {
+    "points": 1.5,
+    "confidence": 4
+  },
+  "playoff_desperation": {
+    "points": 2.5,
+    "week_threshold": 15,
+    "confidence": 7
+  },
+  "lookahead_spot": {
+    "points": -2.0,
+    "confidence": 5
+  },
+  "primetime_edge": {
+    "ats_threshold": 0.60,
+    "points": 1.0,
+    "confidence": 5
+  }
+}
+```
+
+#### `config/research_thresholds.json`
+
+```json
+{
+  "minimum_ats_percentage": 0.60,
+  "minimum_sample_size": 20,
+  "high_confidence_ats": 0.67,
+  "override_threshold": 3.0,
+  "tiebreaker_threshold": 2.0
+}
+```
+
+---
+
+### Implementation Effort Estimates
+
+#### Setup (One-time)
+- **Database setup:** 2 hours
+- **Stadium coordinates collection:** 1 hour
+- **Scraping scripts (6 scripts):** 6-8 hours
+- **Calculation scripts (3 scripts):** 4-6 hours
+- **Database utilities (3 scripts):** 2-3 hours
+- **Agent prompts (4 prompts):** 2-3 hours
+- **Testing and debugging:** 3-4 hours
+- **Total: 20-27 hours**
+
+#### Weekly Maintenance
+- **Automated data collection:** 10 minutes (script runtime)
+- **Manual motivation research:** 30 minutes (news, standings)
+- **Agent review and validation:** 20 minutes
+- **Final integration with ELO/Betting:** 10 minutes
+- **Total: ~1 hour per week**
+
+---
+
+### Advantages of This Approach
+
+1. **Mostly Automated:** 70-80% of work done by scripts after initial setup
+2. **Database-Driven:** Enables historical analysis and backtesting
+3. **Agent Framework:** Provides consistent, repeatable decision process
+4. **Research-Backed:** All adjustments tied to published ATS records
+5. **Trackable Performance:** Can measure which factors work over time
+6. **Scalable:** Easy to add new situational factors as research emerges
+7. **Transparent:** Clear reasoning for every pick and adjustment
+8. **Complementary:** Fills gaps that pure statistical models miss
+
+---
+
+### Risk Mitigation Strategies
+
+#### Risk 1: Overfitting to Historical Trends
+**Mitigation:**
+- Require minimum sample sizes (20+ games)
+- Validate trends across multiple seasons
+- Track 2025 performance separately
+- Adjust weights if current season diverges
+
+#### Risk 2: Data Collection Failures
+**Mitigation:**
+- Build fallback data sources
+- Manual backup for critical data (bye weeks, schedule)
+- Error logging and alerts
+- Weekly validation checks
+
+#### Risk 3: Confirmation Bias
+**Mitigation:**
+- Systematic application of rules (no cherry-picking)
+- Document all decisions before game outcomes
+- Track performance of each factor independently
+- Annual review of methodology
+
+#### Risk 4: Integration Complexity
+**Mitigation:**
+- Clear decision tree for integration
+- Test on historical weeks (1-8) before live use
+- Simple override rules (≥3 points)
+- Manual review of agent recommendations
+
+---
+
+### Success Metrics
+
+Track these metrics weekly to evaluate system performance:
+
+1. **Overall Accuracy:** Win rate on all situational picks
+2. **High-Confidence Accuracy:** Win rate on situational edge ≥4 points
+3. **Factor Performance:** Win rate by specific factor (bye weeks, travel, etc.)
+4. **Override Success:** Accuracy when overriding ELO/Betting agreement
+5. **Tiebreaker Value:** Success rate when used to break ELO/Betting disagreements
+
+**Target Performance:**
+- High-confidence situational edges (≥4 pts): **70%+ accuracy**
+- Medium edges (2-3 pts): **60-65% accuracy**
+- Overall system: **60-64% accuracy**
+
+---
+
+### Next Steps for Implementation
+
+**Immediate (Week 9):**
+1. Create SQLite database schema (`init_database.py`)
+2. Collect stadium coordinates and bye week data
+3. Build `scrape_schedule.py` for 2025 season
+4. Calculate travel distances for all remaining games
+
+**Near-term (Weeks 10-12):**
+1. Build scraping scripts for standings and primetime records
+2. Create `calculate_situational_score.py`
+3. Write agent prompts
+4. Test on historical Weeks 1-8 data
+
+**Mid-term (Weeks 13-15):**
+1. Run system in parallel (no live picks yet)
+2. Validate accuracy against ELO/Betting agents
+3. Refine weights and thresholds
+4. Document edge cases and exceptions
+
+**Long-term (Week 16+, Playoffs):**
+1. Integrate situational scores into weekly predictions
+2. Use as tiebreaker and override system
+3. Track performance for full methodology report
+4. Prepare for 2026 season implementation
+
+---
+
+*This implementation plan provides a complete technical blueprint for building a research-backed, automated situational handicapping system that complements existing ELO and Betting agents.*
