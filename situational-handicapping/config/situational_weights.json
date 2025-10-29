@@ -4,68 +4,112 @@
     "research_ats": "32-16 (66.7%)",
     "confidence": 8,
     "description": "Road favorites vs divisional opponents after bye week",
-    "source": "VSiN Research 2002-present",
-    "apply_when": "team_off_bye AND opponent_not_off_bye"
+    "source": "VSiN NFL Post-Bye Week Betting Systems",
+    "source_url": "https://vsin.com/nfl/nfl-post-bye-week-betting-systems/",
+    "date_range": "2002-present",
+    "sample_size": 48,
+    "roi": "30%",
+    "units": "+14.4",
+    "apply_when": "team_off_bye AND opponent_not_off_bye AND is_road_favorite AND is_divisional"
   },
   "extreme_travel": {
     "miles_threshold": 2000,
     "timezone_threshold": 3,
     "points": -2.0,
-    "confidence": 6,
-    "description": "Away team traveling >2000 miles with 3+ timezone change",
-    "source": "CBS Sports Travel Analysis",
-    "apply_when": "travel_miles > 2000 AND abs(timezone_change) >= 3"
+    "confidence": 5,
+    "description": "Away team traveling >2000 miles with 3+ timezone change (West Coast to East Coast)",
+    "source": "TeamRankings NFL Travel Analysis & Sports Insights Research",
+    "source_url": "https://www.teamrankings.com/blog/sports-betting/nfl-betting-how-west-coast-teams-perform-when-going-east",
+    "date_range": "2003-2012",
+    "research_ats": "57-71-3 (44.5%)",
+    "note": "Since 2013, trend has reversed (59.2% ATS) as teams adjusted travel schedules and oddsmakers corrected",
+    "apply_when": "travel_miles > 2000 AND timezone_change <= -2"
   },
-  "moderate_travel": {
+  "morning_body_clock": {
     "miles_threshold": 1500,
-    "timezone_threshold": 2,
-    "points": -1.0,
-    "confidence": 4,
-    "description": "Away team traveling >1500 miles with 2+ timezone change",
-    "apply_when": "travel_miles > 1500 AND abs(timezone_change) >= 2"
+    "timezone_threshold": 3,
+    "points": -3.0,
+    "confidence": 7,
+    "description": "West Coast team playing 10am local time game on East Coast (1pm ET kickoff)",
+    "source": "Sports Insights - Morning Body Clock Analysis",
+    "source_url": "https://www.sportsinsights.com/blog/nfl-west-coast-teams-traveling-east/",
+    "date_range": "2001-2015",
+    "research_performance": "Home teams win 64.4% (vs 57.2% overall)",
+    "point_impact": "-3.0 points average",
+    "sample_size": 374,
+    "apply_when": "is_west_coast_team AND timezone_change <= -3 AND kickoff_time_local <= 10:30am"
   },
   "revenge_game": {
-    "points": 1.5,
-    "confidence": 4,
+    "points": 1.0,
+    "confidence": 3,
     "description": "Team facing opponent that beat them earlier this season",
-    "source": "Situational handicapping research",
+    "source": "General situational handicapping trends",
+    "source_url": null,
+    "note": "Low confidence - no specific research backing, mainly narrative-driven",
     "apply_when": "rematch AND lost_previous_meeting"
   },
   "playoff_desperation": {
-    "points": 2.5,
+    "points": 2.0,
     "week_threshold": 15,
-    "confidence": 7,
+    "confidence": 5,
     "description": "Playoff-bound team in must-win vs eliminated opponent",
     "source": "Late-season motivation analysis",
+    "source_url": null,
+    "note": "Moderate confidence - based on general observation, no specific ATS research backing",
     "apply_when": "week >= 15 AND team_playoff_odds > 20 AND opponent_playoff_odds < 5"
   },
   "lookahead_spot": {
-    "points": -2.0,
-    "confidence": 5,
+    "points": -1.5,
+    "confidence": 4,
     "description": "Team with huge rivalry/playoff game next week",
     "source": "Trap game analysis",
+    "source_url": null,
+    "note": "Low-moderate confidence - narrative-driven, difficult to quantify",
     "apply_when": "next_week_game_importance > 8"
   },
   "primetime_edge": {
     "ats_threshold": 0.60,
-    "points": 1.0,
-    "confidence": 5,
-    "description": "Team with strong primetime ATS record (>60%)",
-    "source": "Pro Football Reference historical data",
-    "apply_when": "is_primetime AND team_primetime_ats > 0.60"
+    "points": 1.5,
+    "confidence": 6,
+    "description": "West Coast team in primetime game on East Coast (8pm ET or later)",
+    "source": "Sports Insights Prime Time Analysis",
+    "source_url": "https://www.sportsinsights.com/blog/nfl-west-coast-teams-traveling-east/",
+    "date_range": "2003-present",
+    "research_ats": "33-22 (60%)",
+    "note": "West Coast teams perform better in prime time when traveling east",
+    "apply_when": "is_west_coast_team AND is_primetime AND kickoff_time >= 8:00pm_ET"
   },
   "short_week_disadvantage": {
-    "points": -1.5,
-    "confidence": 6,
-    "description": "Team playing on Thursday after Sunday game",
-    "source": "Thursday Night Football analysis",
-    "apply_when": "days_since_last_game <= 4"
+    "points": -1.0,
+    "confidence": 5,
+    "description": "Road team on Thursday Night Football (short week + travel)",
+    "source": "TeamRankings & Odds.com Thursday Night Football Trends",
+    "source_url": "https://www.teamrankings.com/blog/sports-betting/thursday-night-football-nfl-home-team-advantage-ats-records",
+    "date_range": "2019-2023",
+    "research_ats": "Road teams 38-22-1 ATS (63.3%)",
+    "note": "Recent trend favors road teams on TNF, contrary to expectation. Home teams 27-13-2 ATS (67.5%) in Weeks 9+",
+    "apply_when": "is_thursday_night AND (week < 9 ? favor_road : favor_home)"
   },
   "division_game_home": {
-    "points": 1.0,
-    "confidence": 5,
+    "points": 0.5,
+    "confidence": 4,
     "description": "Home team in divisional matchup (familiarity advantage)",
     "source": "Divisional game trends",
+    "source_url": null,
+    "note": "Low confidence - general observation, no specific ATS backing",
     "apply_when": "is_divisional AND is_home_team"
+  },
+  "home_after_bye_nonconference": {
+    "points": -2.5,
+    "confidence": 7,
+    "description": "Fade home teams coming off bye vs non-conference opponents",
+    "source": "VSiN NFL Post-Bye Week Systems",
+    "source_url": "https://vsin.com/nfl/nfl-post-bye-week-betting-trends-and-systems/",
+    "date_range": "2015-present",
+    "research_ats": "26-13-2 ATS (66.7%) fading home team",
+    "sample_size": 41,
+    "roi": "30%",
+    "units": "+11.7",
+    "apply_when": "opponent_off_bye AND is_home_team AND NOT is_conference_game"
   }
 }
