@@ -38,6 +38,7 @@ def create_database():
             stadium_name TEXT,
             stadium_lat REAL,
             stadium_lon REAL,
+            timezone TEXT,
             division TEXT,
             conference TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
