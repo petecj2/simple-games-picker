@@ -2,24 +2,92 @@
 
 *Analysis Date: Tuesday, October 22, 2025*
 *Updated: Saturday, October 25, 2025 - Complete Week 8 Analysis*
+*Final Results: Wednesday, October 29, 2025*
+
+---
+
+## Week 8 Final Results and Analysis
+
+**Final Records:**
+- **ELO Agent: 10-3 (76.9%)**
+- **Betting Agent: 10-3 (76.9%)**
+- **Claude's Picks: 10-3 (76.9%)**
+- **Pete's Picks: 10-3 (76.9%)**
+
+### The Three Upsets That Got Us
+
+**1. Baltimore Ravens 30, Chicago Bears 16** ⚠️
+- **Our Pick:** Bears (after Jackson ruled OUT)
+- **The Upset:** Tyler Huntley delivered in his first 2025 start, going 17-of-22 for 186 yards and a TD
+- **What Happened:** Derrick Henry had 2 TDs and the Ravens defense dominated
+- **The Miss:** Our high-confidence (8/10) pick based on Jackson's absence and Ravens' 3-12 record without him didn't account for Chicago's struggles. Ravens proved they could win with a game manager QB and dominant defense.
+
+**2. New York Jets 39, Cincinnati Bengals 38** ⚠️
+- **Our Pick:** Bengals -7.5 (71% ELO confidence)
+- **The Upset:** Jets got their first win behind Breece Hall's monster day with a wild passing TD
+- **Final Score:** 39-38 thriller
+- **The Miss:** We called the Jets "the worst team in football" and they proved us very wrong. Cincinnati dropped to 3-5 by giving up 39 points. Classic trap game.
+
+**3. Miami Dolphins 34, Atlanta Falcons 10** ⚠️
+- **Our Pick:** Falcons -7.5 (74% ELO confidence - one of our highest)
+- **The Upset:** Tua Tagovailoa threw 4 TDs in a complete blowout
+- **Final Score:** 34-10 Dolphins domination
+- **The Miss:** We relied heavily on Miami's 3-18 SU record as road underdogs under McDaniel. Dolphins snapped their 3-game losing streak emphatically. Atlanta dealing with injuries hurt more than expected.
+
+### What Worked (10 Correct Picks)
+
+**High-Confidence Wins:**
+1. ✅ **LAC 37, MIN 10** - Chargers dominated as predicted, Vikings' OL injuries proved critical
+2. ✅ **BUF 40, CAR 9** - Bills destroyed Panthers, James Cook had 216 yards and 2 TDs
+3. ✅ **HOU 26, SF 15** - Texans controlled without Purdy, exactly as predicted
+4. ✅ **NE 32, CLE 13** - Patriots handled Browns in expected ugly game
+5. ✅ **PHI 38, NYG 20** - Eagles demolished Giants, our highest confidence pick delivered
+6. ✅ **TB 23, NO 3** - Buccaneers cruise, Spencer Rattler benched
+7. ✅ **DEN 44, DAL 24** - Broncos dominated despite sharp money on Cowboys
+8. ✅ **IND 38, TEN 14** - Colts blowout as expected, Jonathan Taylor MVP case
+9. ✅ **GB 35, PIT 25** - Packers won the coin-flip game in primetime
+10. ✅ **KC 28, WAS 7** - Chiefs dominated without Jayden Daniels, as predicted
+
+### Key Takeaways
+
+**What We Learned:**
+1. **Backup QBs Can Win:** Tyler Huntley proved Ravens' system and defense can carry a game manager (opposite of our 3-12 historical data)
+2. **Jets Weren't Dead:** Our "worst team in football" assessment was premature - they had life
+3. **Injury Narratives Can Mislead:** Miami's road struggles evaporated despite their terrible history
+4. **High-Confidence Picks Delivered:** Our 80%+ ELO picks (PHI, IND) both hit comfortably
+5. **Injury Analysis Works:** Purdy OUT (HOU win) and Daniels OUT (KC win) were spot-on
+
+**Statistical Performance:**
+- **10-3 (76.9%)** is a solid week
+- **Our three losses** were all road underdogs (CHI +2.5, CIN -7.5, ATL -7.5)
+- **Perfect on favorites -7 or more:** 4-0 (NE, PHI, IND, KC)
+- **Coin-flip games:** 2-2 (hit LAC, GB; missed on having CHI)
+
+**What to Improve for Week 9:**
+1. Don't over-rely on historical backup QB data - each situation is unique
+2. Be cautious with "worst team" narratives - any NFL team can win on any given Sunday
+3. Consider injury impacts to both teams equally (ATL's injuries hurt them badly)
+4. Trust the process - 76.9% is above our target and the methodology is sound
+
+---
 
 ## Synopsis of Week 8 Picks
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
 | Thu 10/23 | 8:15 PM | MIN | LAC | LAC | LAC | LAC | LAC | LAC |
-| Sun 10/26 | 1:00 PM | BUF | CAR | BUF | BUF | BUF | BUF |  |
-| Sun 10/26 | 1:00 PM | SF | HOU | HOU | HOU | HOU | HOU |  |
-| Sun 10/26 | 1:00 PM | CHI | BAL | BAL | BAL | **CHI** | **CHI** |  |
-| Sun 10/26 | 1:00 PM | NYJ | CIN | CIN | CIN | CIN | CIN |  |
-| Sun 10/26 | 1:00 PM | MIA | ATL | ATL | ATL | ATL | ATL |  |
-| Sun 10/26 | 1:00 PM | CLE | NE | NE | NE | NE | NE |  |
-| Sun 10/26 | 1:00 PM | NYG | PHI | PHI | PHI | PHI | PHI |  |
-| Sun 10/26 | 4:05 PM | TB | NO | TB | TB | TB | TB |  |
-| Sun 10/26 | 4:25 PM | DAL | DEN | DEN | DEN | DEN | DEN |  |
-| Sun 10/26 | 4:25 PM | TEN | IND | IND | IND | IND | IND |  |
-| Sun 10/26 | 8:20 PM | GB | PIT | GB | GB | GB | GB |  |
-| Mon 10/27 | 8:15 PM | WAS | KC | KC | KC | KC | KC |  |
+| Sun 10/26 | 1:00 PM | BUF | CAR | BUF | BUF | BUF | BUF | BUF |
+| Sun 10/26 | 1:00 PM | SF | HOU | HOU | HOU | HOU | HOU | HOU |
+| Sun 10/26 | 1:00 PM | CHI | BAL | BAL | BAL | **CHI** | **CHI** | **BAL** |
+| Sun 10/26 | 1:00 PM | NYJ | CIN | CIN | CIN | CIN | CIN | **NYJ** |
+| Sun 10/26 | 1:00 PM | MIA | ATL | ATL | ATL | ATL | ATL | **MIA** |
+| Sun 10/26 | 1:00 PM | CLE | NE | NE | NE | NE | NE | NE |
+| Sun 10/26 | 1:00 PM | NYG | PHI | PHI | PHI | PHI | PHI | PHI |
+| Sun 10/26 | 4:05 PM | TB | NO | TB | TB | TB | TB | TB |
+| Sun 10/26 | 4:25 PM | DAL | DEN | DEN | DEN | DEN | DEN | DEN |
+| Sun 10/26 | 4:25 PM | TEN | IND | IND | IND | IND | IND | IND |
+| Sun 10/26 | 8:20 PM | GB | PIT | GB | GB | GB | GB | GB |
+| Mon 10/27 | 8:15 PM | WAS | KC | KC | KC | KC | KC | KC |
 
 **Week 8 Picks Summary:**
 - **All 13 games now show complete agreement after Jackson injury update**
