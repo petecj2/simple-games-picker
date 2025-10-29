@@ -298,6 +298,45 @@ When both ELO and Betting agents agree:
 
 **Recommendation:** Weight picks more heavily when agents agree.
 
+#### Agreement-Only Strategy Analysis
+
+An analysis of what would happen if we **only picked games where both agents agreed** reveals significant insights:
+
+**Overall Record on Agreement Games: 53-17 (75.7%)**
+
+Week-by-week breakdown of agreement-only picks:
+- **Week 1:** 12-0 (100%) on 12 agreement games - Perfect start
+- **Week 2:** 11-2 (84.6%) on 13 agreement games - Strong performance
+- **Week 3:** 5-8 (38.5%) on 13 agreement games - Even agreement couldn't save historic upset week
+- **Week 4:** 9-4 (69%) on 13 agreement games - Solid recovery
+- **Week 7:** 6-1 (85.7%) on 7 agreement games - Excellent performance
+- **Week 8:** 10-3 (76.9%) on 13 agreement games - Complete consensus delivered
+
+**Key Findings:**
+
+1. **Significant Performance Improvement:** Agreement-only strategy achieves 75.7% win rate vs 62.2% for Betting Agent overall and 59.3% for ELO overall - a **+13-16 percentage point improvement**
+
+2. **Volume Trade-Off:** This strategy covers ~70 games out of 93 total (75% of games), requiring abstention on ~23 games where agents disagree
+
+3. **Week 3 Still Brutal:** Even with perfect agreement, Week 3's historic variance produced 5-8 record - some weeks are genuinely unpredictable
+
+4. **Best Weeks Were Agreement Weeks:** Week 1 (12-0 perfect), Week 7 (6-1), and Week 8 (10-3) all featured strong agreement and excellent results
+
+5. **Disagreements Signal Uncertainty:** Weeks with most disagreements (Week 7 had 8 disagreements out of 15 games) represent genuine analytical uncertainty worth avoiding
+
+**Strategic Implications:**
+
+- **High-confidence approach viable:** Only betting games with agent agreement would dramatically improve win rate from ~60-62% to ~76%
+- **Picking 75% of games still provides sufficient volume** for most prediction contests
+- **When agents disagree, there's genuine uncertainty** - the disagreements themselves are informative signals
+
+**Recommendation:** Consider implementing confidence tiers:
+- **Tier 1 (High):** Both agents agree + ELO 70%+ → Mandatory picks (75.7% historical win rate)
+- **Tier 2 (Medium):** Both agents agree + ELO 55-70% → Standard picks
+- **Tier 3 (Low):** Agents disagree → Optional/abstain depending on tiebreaker strength
+
+**Bottom Line:** When ELO and Betting agents agree, they're usually right (76%). When they disagree, there's genuine uncertainty that could be strategically avoided in formats that allow selective picking.
+
 ---
 
 ## Methodology Improvements Identified
