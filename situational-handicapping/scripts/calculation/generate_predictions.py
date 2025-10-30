@@ -58,8 +58,8 @@ def generate_markdown(season, week, results, thresholds):
 
     # Synopsis Table
     md.append("## Synopsis - All Games\n")
-    md.append("| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff Odds | Revenge | Total |")
-    md.append("|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|-------------:|--------:|------:|")
+    md.append("| Matchup | Travel | TZ | Playoff Odds | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Desperation | Revenge | Total |")
+    md.append("|---------|--------|----:|-------------:|---------:|-----------:|---------------:|----------:|-----------:|------------:|--------:|------:|")
 
     for result in results:
         matchup = f"{result['away_team']} @ {result['home_team']}"
@@ -86,9 +86,26 @@ def generate_markdown(season, week, results, thresholds):
         elif home_desp is not None:
             playoff = f"- @ {home_desp:.0f}%"
 
+        # Calculate desperation score (only Week 9+)
+        desperation = "-"
+        if week >= 9 and away_desp is not None and home_desp is not None:
+            # Calculate desperation differential
+            desp_diff = abs(away_desp - home_desp)
+
+            # Heuristic: Award points based on desperation gap
+            # 10%+ gap = significant edge
+            # 5-9% gap = moderate edge
+            # <5% gap = minimal edge
+            if desp_diff >= 10:
+                desp_score = 2.0 if away_desp > home_desp else -2.0
+                desperation = f"{desp_score:+.1f}"
+            elif desp_diff >= 5:
+                desp_score = 1.0 if away_desp > home_desp else -1.0
+                desperation = f"{desp_score:+.1f}"
+
         total = f"{result['net_score']:+.1f}"
 
-        md.append(f"| {matchup} | {travel} | {tz} | {bye_week} | {body_clock} | {extreme_travel} | {primetime} | {short_week} | {playoff} | {revenge} | **{total}** |")
+        md.append(f"| {matchup} | {travel} | {tz} | {playoff} | {bye_week} | {body_clock} | {extreme_travel} | {primetime} | {short_week} | {desperation} | {revenge} | **{total}** |")
 
     md.append("")
 
@@ -96,12 +113,13 @@ def generate_markdown(season, week, results, thresholds):
     md.append("**Column Legend:**")
     md.append("- **Travel**: Distance away team travels (miles)")
     md.append("- **TZ**: Timezone change (negative = traveling east, positive = traveling west)")
+    md.append("- **Playoff Odds**: Playoff odds swing shown as away% @ home% (each team's playoff odds change between a win vs a loss)")
     md.append("- **Bye Week**: Road favorites after bye vs divisional opponents (+3.0 pts, 66.7% ATS)")
     md.append("- **Body Clock**: West Coast teams playing 10am local time on East Coast (-3.0 pts, 64.4% home win rate)")
     md.append("- **Extreme Travel**: >2000 miles + 3 TZ change (-2.0 pts)")
     md.append("- **Primetime**: West Coast teams in prime time traveling east (+1.5 pts, 60% ATS)")
     md.append("- **Short Week**: Rest disadvantage penalties (Thursday Night: -1.0, significant differential 2+ days: -0.5 per day, minor differential 1 day: -0.5)")
-    md.append("- **Playoff Odds**: Playoff odds swing shown as away% @ home% (each team's playoff odds change between a win vs a loss)")
+    md.append("- **Desperation**: Playoff desperation edge (Week 9+). ±2.0 pts for 10%+ gap, ±1.0 pts for 5-9% gap")
     md.append("- **Revenge**: Team facing opponent that beat them earlier (+1.0 pts)")
     md.append("- **Total**: Weighted sum of all factors (negative favors home, positive favors away)")
     md.append("")
