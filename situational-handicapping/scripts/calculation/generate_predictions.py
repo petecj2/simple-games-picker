@@ -58,8 +58,8 @@ def generate_markdown(season, week, results, thresholds):
 
     # Synopsis Table
     md.append("## Synopsis - All Games\n")
-    md.append("| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff | Revenge | Total |\n")
-    md.append("|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|--------:|--------:|------:|\n")
+    md.append("| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff | Revenge | Total |")
+    md.append("|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|--------:|--------:|------:|")
 
     for result in results:
         matchup = f"{result['away_team']} @ {result['home_team']}"
@@ -79,7 +79,7 @@ def generate_markdown(season, week, results, thresholds):
 
         md.append(f"| {matchup} | {travel} | {tz} | {bye_week} | {body_clock} | {extreme_travel} | {primetime} | {short_week} | {playoff} | {revenge} | **{total}** |")
 
-    md.append("\n")
+    md.append("")
 
     # Overview
     override_threshold = thresholds['situational_score_thresholds']['override_threshold']

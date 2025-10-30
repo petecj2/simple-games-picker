@@ -1,14 +1,12 @@
 # Week 9 Situational Handicapping Analysis
 
-*Generated: 2025-10-29 23:24*
+*Generated: 2025-10-29 23:26*
 
 
 ## Synopsis - All Games
 
 | Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff | Revenge | Total |
-
 |---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|--------:|--------:|------:|
-
 | SF @ NYG | 2547mi | +3 | - | -3.0 | -2.0 | - | - | - | - | **-5.0** |
 | BAL @ MIA | 944mi | +0 | - | - | - | - | -1.0 | - | - | **-1.0** |
 | SEA @ WSH | 2330mi | +3 | - | - | -2.0 | +1.5 | - | - | - | **-0.5** |
@@ -23,7 +21,6 @@
 | NO @ LAR | 1674mi | -2 | - | - | - | - | - | - | - | **+0.0** |
 | KC @ BUF | 858mi | +1 | - | - | - | - | - | - | - | **+0.0** |
 | ARI @ DAL | 878mi | +2 | - | - | - | - | - | - | - | **+0.0** |
-
 
 ## Overview
 
