@@ -1,6 +1,6 @@
 # Week 9 Situational Handicapping Analysis
 
-*Generated: 2025-10-29 23:26*
+*Generated: 2025-10-29 23:27*
 
 
 ## Synopsis - All Games
@@ -21,6 +21,18 @@
 | NO @ LAR | 1674mi | -2 | - | - | - | - | - | - | - | **+0.0** |
 | KC @ BUF | 858mi | +1 | - | - | - | - | - | - | - | **+0.0** |
 | ARI @ DAL | 878mi | +2 | - | - | - | - | - | - | - | **+0.0** |
+
+**Column Legend:**
+- **Travel**: Distance away team travels (miles)
+- **TZ**: Timezone change (negative = traveling east, positive = traveling west)
+- **Bye Week**: Road favorites after bye vs divisional opponents (+3.0 pts, 66.7% ATS)
+- **Body Clock**: West Coast teams playing 10am local time on East Coast (-3.0 pts, 64.4% home win rate)
+- **Extreme Travel**: >2000 miles + 3 TZ change (-2.0 pts)
+- **Primetime**: West Coast teams in prime time traveling east (+1.5 pts, 60% ATS)
+- **Short Week**: Thursday Night Football disadvantage (-1.0 pts)
+- **Playoff**: Playoff desperation vs eliminated opponent (Week 15+, +2.0 pts)
+- **Revenge**: Team facing opponent that beat them earlier (+1.0 pts)
+- **Total**: Weighted sum of all factors (negative favors home, positive favors away)
 
 ## Overview
 

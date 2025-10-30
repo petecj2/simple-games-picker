@@ -81,6 +81,20 @@ def generate_markdown(season, week, results, thresholds):
 
     md.append("")
 
+    # Legend
+    md.append("**Column Legend:**")
+    md.append("- **Travel**: Distance away team travels (miles)")
+    md.append("- **TZ**: Timezone change (negative = traveling east, positive = traveling west)")
+    md.append("- **Bye Week**: Road favorites after bye vs divisional opponents (+3.0 pts, 66.7% ATS)")
+    md.append("- **Body Clock**: West Coast teams playing 10am local time on East Coast (-3.0 pts, 64.4% home win rate)")
+    md.append("- **Extreme Travel**: >2000 miles + 3 TZ change (-2.0 pts)")
+    md.append("- **Primetime**: West Coast teams in prime time traveling east (+1.5 pts, 60% ATS)")
+    md.append("- **Short Week**: Thursday Night Football disadvantage (-1.0 pts)")
+    md.append("- **Playoff**: Playoff desperation vs eliminated opponent (Week 15+, +2.0 pts)")
+    md.append("- **Revenge**: Team facing opponent that beat them earlier (+1.0 pts)")
+    md.append("- **Total**: Weighted sum of all factors (negative favors home, positive favors away)")
+    md.append("")
+
     # Overview
     override_threshold = thresholds['situational_score_thresholds']['override_threshold']
     strong_threshold = thresholds['situational_score_thresholds']['strong_tiebreaker_threshold']
