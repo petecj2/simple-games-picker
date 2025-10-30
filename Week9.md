@@ -4,7 +4,7 @@
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Thu 10/30 | 8:15 PM | BAL | MIA | BAL | BAL | BAL |  |  |
+| Thu 10/30 | 8:15 PM | BAL | MIA | BAL | BAL | BAL | BAL |  |
 
 ---
 
