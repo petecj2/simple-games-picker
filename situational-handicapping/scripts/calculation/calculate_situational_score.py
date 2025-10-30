@@ -15,7 +15,7 @@ import json
 import sqlite3
 import sys
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Path configuration
 SCRIPT_DIR = Path(__file__).parent
@@ -244,23 +244,108 @@ def check_primetime_edge(cursor, team_abbr, home_team_info, game_time, weights):
     return 0.0, None
 
 
-def check_short_week(cursor, game_date, weights):
-    """
-    Check for Thursday Night Football short week.
+def get_previous_game_date(cursor, team_id, current_game_date, season):
+    """Get the date of a team's previous game."""
+    cursor.execute("""
+        SELECT game_date
+        FROM games
+        WHERE season = ?
+          AND game_date < ?
+          AND (home_team_id = ? OR away_team_id = ?)
+        ORDER BY game_date DESC
+        LIMIT 1
+    """, [season, current_game_date, team_id, team_id])
 
-    TNF impact varies by week.
+    result = cursor.fetchone()
+    return result[0] if result else None
+
+
+def check_short_week(cursor, away_team_id, home_team_id, game_date, season, week, weights):
+    """
+    Check for short week disadvantage based on actual rest days.
+
+    Calculates days of rest for both teams and applies penalty based on:
+    1. Rest differential (one team has fewer days)
+    2. Absolute short rest (both teams < 6 days)
+    3. Week-dependent home/road bias for Thursday games
+
+    Handles special cases:
+    - Thursday after Sunday (both teams 3 days rest)
+    - Monday → Sunday (6 days vs 7 days rest)
+    - Consecutive Thursdays after Thanksgiving (7 days rest for both)
     """
     config = weights['short_week_disadvantage']
 
-    # Check if Thursday game
     try:
         game_dt = datetime.strptime(game_date, '%Y-%m-%d')
-        if game_dt.weekday() == 3:  # Thursday = 3
-            return config['points'], "Thursday Night Football short week"
     except:
-        pass
+        return 0.0, None, 0.0, None
 
-    return 0.0, None
+    # Get previous game dates for both teams
+    away_prev = get_previous_game_date(cursor, away_team_id, game_date, season)
+    home_prev = get_previous_game_date(cursor, home_team_id, game_date, season)
+
+    if not away_prev or not home_prev:
+        return 0.0, None, 0.0, None
+
+    # Calculate days of rest
+    away_prev_dt = datetime.strptime(away_prev, '%Y-%m-%d')
+    home_prev_dt = datetime.strptime(home_prev, '%Y-%m-%d')
+
+    away_rest_days = (game_dt - away_prev_dt).days
+    home_rest_days = (game_dt - home_prev_dt).days
+
+    rest_differential = abs(away_rest_days - home_rest_days)
+
+    # Standard week = 7 days rest (Sunday to Sunday)
+    # Short week scenarios:
+    # - Thursday after Sunday = 3 days
+    # - Monday to Sunday = 6 days
+    # - Consecutive Thursdays = 7 days (not short)
+
+    away_score = 0.0
+    away_reason = None
+    home_score = 0.0
+    home_reason = None
+
+    # Scenario 1: Significant rest differential (2+ days)
+    if rest_differential >= 2:
+        if away_rest_days < home_rest_days:
+            # Away team at disadvantage
+            penalty = -0.5 * rest_differential  # -1.0 for 2 days, -1.5 for 3 days, etc.
+            away_score = penalty
+            away_reason = f"Rest disadvantage: {away_rest_days} days vs {home_rest_days} days"
+        else:
+            # Home team at disadvantage
+            penalty = -0.5 * rest_differential
+            home_score = penalty
+            home_reason = f"Rest disadvantage: {home_rest_days} days vs {away_rest_days} days"
+
+    # Scenario 2: Thursday Night Football (both teams on short rest)
+    elif game_dt.weekday() == 3 and away_rest_days <= 4 and home_rest_days <= 4:
+        # Both teams have 3-4 days rest (Thursday after Sunday/Monday)
+        # Week-dependent bias from research
+        if week >= 9:
+            # Weeks 9+: Home teams perform better (27-13-2 ATS = 67.5%)
+            away_score = config['points']  # -1.0 to away team
+            away_reason = f"Thursday Night Football (Week {week}, {away_rest_days}d rest)"
+        else:
+            # Weeks 1-8: Road teams perform better (38-22-1 ATS = 63.3%)
+            home_score = config['points']  # -1.0 to home team
+            home_reason = f"Thursday Night Football (Week {week}, {home_rest_days}d rest)"
+
+    # Scenario 3: Minor rest differential (1 day difference)
+    elif rest_differential == 1 and min(away_rest_days, home_rest_days) < 7:
+        # Small penalty for 1-day disadvantage (e.g., 6 days vs 7 days)
+        penalty = -0.5
+        if away_rest_days < home_rest_days:
+            away_score = penalty
+            away_reason = f"Minor rest disadvantage: {away_rest_days} vs {home_rest_days} days"
+        else:
+            home_score = penalty
+            home_reason = f"Minor rest disadvantage: {home_rest_days} vs {away_rest_days} days"
+
+    return away_score, away_reason, home_score, home_reason
 
 
 def check_playoff_desperation(cursor, team_abbr, opponent_abbr, season, week, weights):
@@ -397,11 +482,14 @@ def calculate_game_score(cursor, game, weights, thresholds, verbose=False):
     if score != 0:
         away_factors.append((score, reason, weights['primetime_edge']['confidence']))
 
-    # Short week (both teams)
-    score, reason = check_short_week(cursor, game['game_date'], weights)
-    if score != 0:
-        # Apply to road team (disadvantage)
-        away_factors.append((score, reason, weights['short_week_disadvantage']['confidence']))
+    # Short week (both teams) - now returns scores for both teams
+    away_short_score, away_short_reason, home_short_score, home_short_reason = check_short_week(
+        cursor, game['away_team_id'], game['home_team_id'], game['game_date'], season, week, weights
+    )
+    if away_short_score != 0:
+        away_factors.append((away_short_score, away_short_reason, weights['short_week_disadvantage']['confidence']))
+    if home_short_score != 0:
+        home_factors.append((home_short_score, home_short_reason, weights['short_week_disadvantage']['confidence']))
 
     # Playoff desperation (both teams)
     score, reason = check_playoff_desperation(

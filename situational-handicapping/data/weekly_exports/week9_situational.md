@@ -1,6 +1,6 @@
 # Week 9 Situational Handicapping Analysis
 
-*Generated: 2025-10-29 23:27*
+*Generated: 2025-10-30 00:02*
 
 
 ## Synopsis - All Games
@@ -8,7 +8,9 @@
 | Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff | Revenge | Total |
 |---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|--------:|--------:|------:|
 | SF @ NYG | 2547mi | +3 | - | -3.0 | -2.0 | - | - | - | - | **-5.0** |
+| LAC @ TEN | 1784mi | +2 | - | - | - | - | -1.5 | - | - | **+1.5** |
 | BAL @ MIA | 944mi | +0 | - | - | - | - | -1.0 | - | - | **-1.0** |
+| KC @ BUF | 858mi | +1 | - | - | - | - | -0.5 | - | - | **-0.5** |
 | SEA @ WSH | 2330mi | +3 | - | - | -2.0 | +1.5 | - | - | - | **-0.5** |
 | ATL @ NE | 917mi | +0 | - | - | - | - | - | - | - | **+0.0** |
 | CAR @ GB | 746mi | -1 | - | - | - | - | - | - | - | **+0.0** |
@@ -16,10 +18,8 @@
 | IND @ PIT | 328mi | +0 | - | - | - | - | - | - | - | **+0.0** |
 | DEN @ HOU | 883mi | +1 | - | - | - | - | - | - | - | **+0.0** |
 | MIN @ DET | 542mi | +1 | - | - | - | - | - | - | - | **+0.0** |
-| LAC @ TEN | 1784mi | +2 | - | - | - | - | - | - | - | **+0.0** |
 | JAX @ LV | 1970mi | -3 | - | - | - | - | - | - | - | **+0.0** |
 | NO @ LAR | 1674mi | -2 | - | - | - | - | - | - | - | **+0.0** |
-| KC @ BUF | 858mi | +1 | - | - | - | - | - | - | - | **+0.0** |
 | ARI @ DAL | 878mi | +2 | - | - | - | - | - | - | - | **+0.0** |
 
 **Column Legend:**
@@ -29,7 +29,7 @@
 - **Body Clock**: West Coast teams playing 10am local time on East Coast (-3.0 pts, 64.4% home win rate)
 - **Extreme Travel**: >2000 miles + 3 TZ change (-2.0 pts)
 - **Primetime**: West Coast teams in prime time traveling east (+1.5 pts, 60% ATS)
-- **Short Week**: Thursday Night Football disadvantage (-1.0 pts)
+- **Short Week**: Rest disadvantage penalties (Thursday Night: -1.0, significant differential 2+ days: -0.5 per day, minor differential 1 day: -0.5)
 - **Playoff**: Playoff desperation vs eliminated opponent (Week 15+, +2.0 pts)
 - **Revenge**: Team facing opponent that beat them earlier (+1.0 pts)
 - **Total**: Weighted sum of all factors (negative favors home, positive favors away)
@@ -40,8 +40,8 @@ Total games analyzed: **14**
 
 - High-confidence edges (≥3.0 pts): **1**
 - Strong tiebreakers (2.0-2.9 pts): **0**
-- Weak tiebreakers (1.0-1.9 pts): **1**
-- No situational edge: **12**
+- Weak tiebreakers (1.0-1.9 pts): **2**
+- No situational edge: **11**
 
 ## 🔥 High-Confidence Picks (Override Other Models)
 
@@ -65,16 +65,23 @@ Travel: 2547 miles, +3 timezone change
 
 Minor situational influences (1.0-1.9 pts).
 
+### LAC @ TEN
+
+**Situational Lean: LAC (+1.5 pts)**
+
+Factors: Rest disadvantage: 7 days vs 10 days
+
 ### BAL @ MIA
 
 **Situational Lean: MIA (-1.0 pts)**
 
-Factors: Thursday Night Football short week
+Factors: Thursday Night Football (Week 9, 4d rest
 
 ## 📋 No Significant Situational Edge
 
 These games defer to ELO and betting market analysis.
 
+- KC @ BUF: 858 miles, +1 TZ
 - SEA @ WSH: 2330 miles, +3 TZ
 - ATL @ NE: 917 miles, +0 TZ
 - CAR @ GB: 746 miles, -1 TZ
@@ -82,10 +89,8 @@ These games defer to ELO and betting market analysis.
 - IND @ PIT: 328 miles, +0 TZ
 - DEN @ HOU: 883 miles, +1 TZ
 - MIN @ DET: 542 miles, +1 TZ
-- LAC @ TEN: 1784 miles, +2 TZ
 - JAX @ LV: 1970 miles, -3 TZ
 - NO @ LAR: 1674 miles, -2 TZ
-- KC @ BUF: 858 miles, +1 TZ
 - ARI @ DAL: 878 miles, +2 TZ
 
 ---

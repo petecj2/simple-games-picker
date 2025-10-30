@@ -71,7 +71,7 @@ def generate_markdown(season, week, results, thresholds):
         body_clock = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'body clock' in f[1].lower()])
         extreme_travel = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'Extreme travel' in f[1]])
         primetime = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'primetime' in f[1].lower()])
-        short_week = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'Thursday' in f[1]])
+        short_week = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'Thursday' in f[1] or 'rest disadvantage' in f[1].lower()])
         playoff = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'layoff' in f[1].lower()])
         revenge = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'revenge' in f[1].lower()])
 
@@ -89,7 +89,7 @@ def generate_markdown(season, week, results, thresholds):
     md.append("- **Body Clock**: West Coast teams playing 10am local time on East Coast (-3.0 pts, 64.4% home win rate)")
     md.append("- **Extreme Travel**: >2000 miles + 3 TZ change (-2.0 pts)")
     md.append("- **Primetime**: West Coast teams in prime time traveling east (+1.5 pts, 60% ATS)")
-    md.append("- **Short Week**: Thursday Night Football disadvantage (-1.0 pts)")
+    md.append("- **Short Week**: Rest disadvantage penalties (Thursday Night: -1.0, significant differential 2+ days: -0.5 per day, minor differential 1 day: -0.5)")
     md.append("- **Playoff**: Playoff desperation vs eliminated opponent (Week 15+, +2.0 pts)")
     md.append("- **Revenge**: Team facing opponent that beat them earlier (+1.0 pts)")
     md.append("- **Total**: Weighted sum of all factors (negative favors home, positive favors away)")
