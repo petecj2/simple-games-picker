@@ -1,26 +1,26 @@
 # Week 9 Situational Handicapping Analysis
 
-*Generated: 2025-10-30 00:02*
+*Generated: 2025-10-30 01:11*
 
 
 ## Synopsis - All Games
 
-| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff | Revenge | Total |
-|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|--------:|--------:|------:|
-| SF @ NYG | 2547mi | +3 | - | -3.0 | -2.0 | - | - | - | - | **-5.0** |
-| LAC @ TEN | 1784mi | +2 | - | - | - | - | -1.5 | - | - | **+1.5** |
-| BAL @ MIA | 944mi | +0 | - | - | - | - | -1.0 | - | - | **-1.0** |
-| KC @ BUF | 858mi | +1 | - | - | - | - | -0.5 | - | - | **-0.5** |
-| SEA @ WSH | 2330mi | +3 | - | - | -2.0 | +1.5 | - | - | - | **-0.5** |
-| ATL @ NE | 917mi | +0 | - | - | - | - | - | - | - | **+0.0** |
-| CAR @ GB | 746mi | -1 | - | - | - | - | - | - | - | **+0.0** |
-| CHI @ CIN | 251mi | +1 | - | - | - | - | - | - | - | **+0.0** |
-| IND @ PIT | 328mi | +0 | - | - | - | - | - | - | - | **+0.0** |
-| DEN @ HOU | 883mi | +1 | - | - | - | - | - | - | - | **+0.0** |
-| MIN @ DET | 542mi | +1 | - | - | - | - | - | - | - | **+0.0** |
-| JAX @ LV | 1970mi | -3 | - | - | - | - | - | - | - | **+0.0** |
-| NO @ LAR | 1674mi | -2 | - | - | - | - | - | - | - | **+0.0** |
-| ARI @ DAL | 878mi | +2 | - | - | - | - | - | - | - | **+0.0** |
+| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff Odds | Revenge | Total |
+|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|-------------:|--------:|------:|
+| SF @ NYG | 2547mi | +3 | - | -3.0 | -2.0 | - | - | 19% @ 2% | - | **-5.0** |
+| LAC @ TEN | 1784mi | +2 | - | - | - | - | -1.5 | 22% @ 0% | - | **+1.5** |
+| BAL @ MIA | 944mi | +0 | - | - | - | - | -1.0 | 20% @ 2% | - | **-1.0** |
+| KC @ BUF | 858mi | +1 | - | - | - | - | -0.5 | 17% @ 14% | - | **-0.5** |
+| SEA @ WSH | 2330mi | +3 | - | - | -2.0 | +1.5 | - | 19% @ 11% | - | **-0.5** |
+| ATL @ NE | 917mi | +0 | - | - | - | - | - | 16% @ 13% | - | **+0.0** |
+| CAR @ GB | 746mi | -1 | - | - | - | - | - | 15% @ 10% | - | **+0.0** |
+| CHI @ CIN | 251mi | +1 | - | - | - | - | - | 15% @ 6% | - | **+0.0** |
+| IND @ PIT | 328mi | +0 | - | - | - | - | - | 6% @ 18% | - | **+0.0** |
+| DEN @ HOU | 883mi | +1 | - | - | - | - | - | 16% @ 23% | - | **+0.0** |
+| MIN @ DET | 542mi | +1 | - | - | - | - | - | 14% @ 18% | - | **+0.0** |
+| JAX @ LV | 1970mi | -3 | - | - | - | - | - | 22% @ 1% | - | **+0.0** |
+| NO @ LAR | 1674mi | -2 | - | - | - | - | - | 0% @ 12% | - | **+0.0** |
+| ARI @ DAL | 878mi | +2 | - | - | - | - | - | 4% @ 12% | - | **+0.0** |
 
 **Column Legend:**
 - **Travel**: Distance away team travels (miles)
@@ -30,7 +30,7 @@
 - **Extreme Travel**: >2000 miles + 3 TZ change (-2.0 pts)
 - **Primetime**: West Coast teams in prime time traveling east (+1.5 pts, 60% ATS)
 - **Short Week**: Rest disadvantage penalties (Thursday Night: -1.0, significant differential 2+ days: -0.5 per day, minor differential 1 day: -0.5)
-- **Playoff**: Playoff desperation vs eliminated opponent (Week 15+, +2.0 pts)
+- **Playoff Odds**: Playoff odds swing shown as away% @ home% (each team's playoff odds change between a win vs a loss)
 - **Revenge**: Team facing opponent that beat them earlier (+1.0 pts)
 - **Total**: Weighted sum of all factors (negative favors home, positive favors away)
 

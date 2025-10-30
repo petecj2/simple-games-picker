@@ -58,8 +58,8 @@ def generate_markdown(season, week, results, thresholds):
 
     # Synopsis Table
     md.append("## Synopsis - All Games\n")
-    md.append("| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff | Revenge | Total |")
-    md.append("|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|--------:|--------:|------:|")
+    md.append("| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff Odds | Revenge | Total |")
+    md.append("|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|-------------:|--------:|------:|")
 
     for result in results:
         matchup = f"{result['away_team']} @ {result['home_team']}"
@@ -72,8 +72,19 @@ def generate_markdown(season, week, results, thresholds):
         extreme_travel = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'Extreme travel' in f[1]])
         primetime = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'primetime' in f[1].lower()])
         short_week = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'Thursday' in f[1] or 'rest disadvantage' in f[1].lower()])
-        playoff = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'layoff' in f[1].lower()])
         revenge = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'revenge' in f[1].lower()])
+
+        # Format playoff desperation (show both teams: away @ home)
+        playoff = "-"
+        away_desp = result.get('away_desperation')
+        home_desp = result.get('home_desperation')
+
+        if away_desp is not None and home_desp is not None:
+            playoff = f"{away_desp:.0f}% @ {home_desp:.0f}%"
+        elif away_desp is not None:
+            playoff = f"{away_desp:.0f}% @ -"
+        elif home_desp is not None:
+            playoff = f"- @ {home_desp:.0f}%"
 
         total = f"{result['net_score']:+.1f}"
 
@@ -90,7 +101,7 @@ def generate_markdown(season, week, results, thresholds):
     md.append("- **Extreme Travel**: >2000 miles + 3 TZ change (-2.0 pts)")
     md.append("- **Primetime**: West Coast teams in prime time traveling east (+1.5 pts, 60% ATS)")
     md.append("- **Short Week**: Rest disadvantage penalties (Thursday Night: -1.0, significant differential 2+ days: -0.5 per day, minor differential 1 day: -0.5)")
-    md.append("- **Playoff**: Playoff desperation vs eliminated opponent (Week 15+, +2.0 pts)")
+    md.append("- **Playoff Odds**: Playoff odds swing shown as away% @ home% (each team's playoff odds change between a win vs a loss)")
     md.append("- **Revenge**: Team facing opponent that beat them earlier (+1.0 pts)")
     md.append("- **Total**: Weighted sum of all factors (negative favors home, positive favors away)")
     md.append("")

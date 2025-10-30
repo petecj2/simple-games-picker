@@ -352,17 +352,16 @@ def check_playoff_desperation(cursor, team_abbr, opponent_abbr, season, week, we
     """
     Check for playoff desperation factor.
 
-    Playoff-bound team vs eliminated opponent (Week 15+): +2.0 points
+    Calculates desperation as difference between win and loss playoff odds.
+    The team with the larger swing has more at stake (more desperate).
+
+    Returns: (score, reason, desperation_value)
     """
     config = weights['playoff_desperation']
 
-    # Only applies Week 15+
-    if week < config['week_threshold']:
-        return 0.0, None
-
-    # Get standings
+    # Get standings with playoff odds
     cursor.execute("""
-        SELECT s.playoff_odds
+        SELECT s.playoff_odds, s.if_win_playoff_odds, s.if_lose_playoff_odds
         FROM standings s
         JOIN teams t ON s.team_id = t.team_id
         WHERE t.abbreviation = ? AND s.season = ? AND s.week = ?
@@ -371,7 +370,7 @@ def check_playoff_desperation(cursor, team_abbr, opponent_abbr, season, week, we
     team_result = cursor.fetchone()
 
     cursor.execute("""
-        SELECT s.playoff_odds
+        SELECT s.playoff_odds, s.if_win_playoff_odds, s.if_lose_playoff_odds
         FROM standings s
         JOIN teams t ON s.team_id = t.team_id
         WHERE t.abbreviation = ? AND s.season = ? AND s.week = ?
@@ -380,16 +379,32 @@ def check_playoff_desperation(cursor, team_abbr, opponent_abbr, season, week, we
     opp_result = cursor.fetchone()
 
     if not team_result or not opp_result:
-        return 0.0, None
+        return 0.0, None, None
 
-    team_odds = team_result[0]
-    opp_odds = opp_result[0]
+    team_current, team_win, team_lose = team_result
+    opp_current, opp_win, opp_lose = opp_result
 
-    # Playoff contender vs eliminated team
-    if team_odds > 20 and opp_odds < 5:
-        return config['points'], f"Playoff desperation: {team_odds:.0f}% vs {opp_odds:.0f}%"
+    # Calculate desperation (swing between win and loss)
+    team_desperation = None
+    opp_desperation = None
 
-    return 0.0, None
+    if team_win is not None and team_lose is not None:
+        team_desperation = team_win - team_lose
+
+    if opp_win is not None and opp_lose is not None:
+        opp_desperation = opp_win - opp_lose
+
+    # If we can't calculate desperation for either team, return no score
+    if team_desperation is None and opp_desperation is None:
+        return 0.0, None, None
+
+    # Store desperation value for both teams to use in output
+    # The actual scoring will be applied only if appropriate based on thresholds
+    # For now, we'll just return the desperation difference for informational purposes
+
+    # Return 0 score but include desperation data for reporting
+    # The actual game scoring will compare both teams' desperation
+    return 0.0, None, team_desperation
 
 
 def check_revenge_game(cursor, team_abbr, opponent_abbr, season, week, weights):
@@ -491,18 +506,16 @@ def calculate_game_score(cursor, game, weights, thresholds, verbose=False):
     if home_short_score != 0:
         home_factors.append((home_short_score, home_short_reason, weights['short_week_disadvantage']['confidence']))
 
-    # Playoff desperation (both teams)
-    score, reason = check_playoff_desperation(
+    # Playoff desperation (both teams) - now returns desperation value
+    away_score, away_reason, away_desperation = check_playoff_desperation(
         cursor, away_info['abbr'], home_info['abbr'], season, week, weights
     )
-    if score != 0:
-        away_factors.append((score, reason, weights['playoff_desperation']['confidence']))
-
-    score, reason = check_playoff_desperation(
+    home_score, home_reason, home_desperation = check_playoff_desperation(
         cursor, home_info['abbr'], away_info['abbr'], season, week, weights
     )
-    if score != 0:
-        home_factors.append((score, reason, weights['playoff_desperation']['confidence']))
+
+    # Note: We don't add scores to factors list anymore - desperation is informational
+    # It will be displayed separately in the output
 
     # Revenge game (both teams)
     score, reason = check_revenge_game(
@@ -522,6 +535,22 @@ def calculate_game_score(cursor, game, weights, thresholds, verbose=False):
     home_score = sum(f[0] for f in home_factors)
     net_score = away_score - home_score  # Positive favors away, negative favors home
 
+    # Determine more desperate team
+    more_desperate_team = None
+    desperation_diff = None
+    if away_desperation is not None and home_desperation is not None:
+        desperation_diff = abs(away_desperation - home_desperation)
+        if away_desperation > home_desperation:
+            more_desperate_team = away_info['abbr']
+        elif home_desperation > away_desperation:
+            more_desperate_team = home_info['abbr']
+    elif away_desperation is not None:
+        more_desperate_team = away_info['abbr']
+        desperation_diff = away_desperation
+    elif home_desperation is not None:
+        more_desperate_team = home_info['abbr']
+        desperation_diff = home_desperation
+
     return {
         'game_id': game['game_id'],
         'away_team': away_info['abbr'],
@@ -534,7 +563,11 @@ def calculate_game_score(cursor, game, weights, thresholds, verbose=False):
         'favored_team': away_info['abbr'] if net_score > 0 else home_info['abbr'] if net_score < 0 else None,
         'edge_magnitude': abs(net_score),
         'travel_miles': game['travel_miles'],
-        'timezone_change': game['timezone_change']
+        'timezone_change': game['timezone_change'],
+        'away_desperation': away_desperation,
+        'home_desperation': home_desperation,
+        'more_desperate_team': more_desperate_team,
+        'desperation_diff': desperation_diff
     }
 
 
