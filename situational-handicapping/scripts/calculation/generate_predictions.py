@@ -41,6 +41,13 @@ def format_date(date_str):
         return date_str
 
 
+def get_factor_summary(factors):
+    """Get short summary of factors for table."""
+    if not factors:
+        return "-"
+    return "; ".join([f"{s:+.1f}" for s, r, c in factors])
+
+
 def generate_markdown(season, week, results, thresholds):
     """Generate markdown content for predictions."""
     md = []
@@ -48,6 +55,31 @@ def generate_markdown(season, week, results, thresholds):
     md.append(f"# Week {week} Situational Handicapping Analysis\n")
     md.append(f"*Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}*\n")
     md.append("")
+
+    # Synopsis Table
+    md.append("## Synopsis - All Games\n")
+    md.append("| Matchup | Travel | TZ | Bye Week | Body Clock | Extreme Travel | Primetime | Short Week | Playoff | Revenge | Total |\n")
+    md.append("|---------|--------|----|---------:|-----------:|---------------:|----------:|-----------:|--------:|--------:|------:|\n")
+
+    for result in results:
+        matchup = f"{result['away_team']} @ {result['home_team']}"
+        travel = f"{result['travel_miles']:.0f}mi"
+        tz = f"{result['timezone_change']:+d}"
+
+        # Extract individual factor scores
+        bye_week = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'bye' in f[1].lower()])
+        body_clock = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'body clock' in f[1].lower()])
+        extreme_travel = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'Extreme travel' in f[1]])
+        primetime = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'primetime' in f[1].lower()])
+        short_week = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'Thursday' in f[1]])
+        playoff = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'layoff' in f[1].lower()])
+        revenge = get_factor_summary([f for f in result['away_factors'] + result['home_factors'] if 'revenge' in f[1].lower()])
+
+        total = f"{result['net_score']:+.1f}"
+
+        md.append(f"| {matchup} | {travel} | {tz} | {bye_week} | {body_clock} | {extreme_travel} | {primetime} | {short_week} | {playoff} | {revenge} | **{total}** |")
+
+    md.append("\n")
 
     # Overview
     override_threshold = thresholds['situational_score_thresholds']['override_threshold']
