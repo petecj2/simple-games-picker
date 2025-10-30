@@ -58,6 +58,37 @@ Each week's predictions are saved as `Week#.md` with the following structure:
 
 ## Usage
 
+### Weekly Data Collection (Tuesday)
+
+Before generating predictions, run these scripts to populate the database with current data:
+
+1. **Process Neil Paine ELO Data**
+   ```bash
+   cd situational-handicapping/scripts/collection
+   python3 process_nfl_html.py
+   ```
+   - Processes Neil Paine's weekly ELO ratings
+   - Creates `weekX_predictions.md` with power ratings
+
+2. **Scrape NFL Standings**
+   ```bash
+   python3 scrape_standings.py --season 2025 --week 9
+   ```
+   - Fetches current standings from ESPN API (automated)
+   - Populates wins, losses, ties, division ranks, conference ranks
+   - No manual download required
+
+3. **Parse Playoff Odds**
+   ```bash
+   python3 parse_playoff_odds.py playoff_odds_week9.html --season 2025 --week 9 --format database
+   ```
+   - **Manual step**: Download HTML from [NFL.com Playoff Picture](https://www.nfl.com/playoffs/playoff-picture/)
+   - Save as `playoff_odds_weekX.html` (week-numbered for historical tracking)
+   - Extracts current playoff odds and win/loss scenario probabilities
+   - Populates `if_win_playoff_odds` and `if_lose_playoff_odds` in database
+
+### Generating Weekly Predictions
+
 1. Run the prediction command for a specific week:
    ```
    Predict the game winners in Week [#] of the [year] NFL season
