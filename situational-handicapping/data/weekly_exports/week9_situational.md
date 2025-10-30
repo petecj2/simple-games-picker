@@ -1,63 +1,61 @@
 # Week 9 Situational Handicapping Analysis
 
-*Generated: 2025-10-29 16:37*
+*Generated: 2025-10-29 23:20*
 
 
 ## Overview
 
-Total games analyzed: **13**
+Total games analyzed: **14**
 
-- High-confidence edges (≥3.0 pts): **2**
+- High-confidence edges (≥3.0 pts): **1**
 - Strong tiebreakers (2.0-2.9 pts): **0**
-- Weak tiebreakers (1.0-1.9 pts): **0**
-- No situational edge: **11**
+- Weak tiebreakers (1.0-1.9 pts): **1**
+- No situational edge: **12**
 
 ## 🔥 High-Confidence Picks (Override Other Models)
 
 These games have situational edges ≥3.0 points backed by research.
 
-### LAC @ CLE
+### SF @ NYG
 
-**Situational Pick: CLE (-5.0 pts)**
-
-*Edge Type: HIGH CONFIDENCE OVERRIDE*
-
-Travel: 2053 miles, +3 timezone change
-
-**Situational Factors:**
-
-- **LAC:**
-  - -2.0 pts: Extreme travel: 2053 miles, +3 TZ (confidence: 5/10)
-  - -3.0 pts: Morning body clock: West Coast at 10am local time (confidence: 7/10)
-
-### LV @ CIN
-
-**Situational Pick: CIN (-3.0 pts)**
+**Situational Pick: NYG (-5.0 pts)**
 
 *Edge Type: HIGH CONFIDENCE OVERRIDE*
 
-Travel: 1684 miles, +3 timezone change
+Travel: 2547 miles, +3 timezone change
 
 **Situational Factors:**
 
-- **LV:**
+- **SF:**
+  - -2.0 pts: Extreme travel: 2547 miles, +3 TZ (confidence: 5/10)
   - -3.0 pts: Morning body clock: West Coast at 10am local time (confidence: 7/10)
+
+## 📊 Weak Tiebreakers
+
+Minor situational influences (1.0-1.9 pts).
+
+### BAL @ MIA
+
+**Situational Lean: MIA (-1.0 pts)**
+
+Factors: Thursday Night Football short week
 
 ## 📋 No Significant Situational Edge
 
 These games defer to ELO and betting market analysis.
 
-- BAL @ DEN: 1508 miles, -2 TZ
-- NE @ TEN: 925 miles, -1 TZ
-- WSH @ NYG: 198 miles, +0 TZ
-- NO @ CAR: 649 miles, +1 TZ
-- MIA @ BUF: 1165 miles, +0 TZ
-- IND @ MIN: 510 miles, -1 TZ
-- ATL @ DAL: 736 miles, -1 TZ
-- CHI @ ARI: 1459 miles, -2 TZ
-- DET @ GB: 293 miles, -1 TZ
-- LAR @ SEA: 965 miles, +0 TZ
-- TB @ KC: 1028 miles, -1 TZ
+- SEA @ WSH: 2330 miles, +3 TZ
+- ATL @ NE: 917 miles, +0 TZ
+- CAR @ GB: 746 miles, -1 TZ
+- CHI @ CIN: 251 miles, +1 TZ
+- IND @ PIT: 328 miles, +0 TZ
+- DEN @ HOU: 883 miles, +1 TZ
+- MIN @ DET: 542 miles, +1 TZ
+- LAC @ TEN: 1784 miles, +2 TZ
+- JAX @ LV: 1970 miles, -3 TZ
+- NO @ LAR: 1674 miles, -2 TZ
+- KC @ BUF: 858 miles, +1 TZ
+- ARI @ DAL: 878 miles, +2 TZ
 
 ---
 
