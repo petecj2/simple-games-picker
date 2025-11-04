@@ -39,19 +39,19 @@
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
 | Thu 10/30 | 8:15PM | BAL | MIA | BAL | BAL | BAL | BAL | BAL |
-| Sun 11/2 | 1:00PM | CHI | CIN | CIN | CHI | CHI | CHI | |
-| Sun 11/2 | 1:00PM | MIN | DET | DET | DET | DET | DET | |
-| Sun 11/2 | 1:00PM | CAR | GB | GB | GB | GB | GB | |
-| Sun 11/2 | 1:00PM | LAC | TEN | LAC | LAC | LAC | LAC | |
-| Sun 11/2 | 1:00PM | ATL | NE | NE | NE | NE | NE | |
-| Sun 11/2 | 1:00PM | SF | NYG | SF | SF | SF | SF | |
-| Sun 11/2 | 1:00PM | IND | PIT | IND | IND | IND | IND | |
-| Sun 11/2 | 1:00PM | DEN | HOU | HOU | HOU | HOU | HOU | |
-| Sun 11/2 | 4:05PM | JAX | LV | JAX | LV | LV | JAX | |
-| Sun 11/2 | 4:05PM | NO | LAR | LAR | LAR | LAR | LAR | |
-| Sun 11/2 | 4:25PM | KC | BUF | KC | KC | KC | KC | |
-| Sun 11/2 | 8:20PM | SEA | WAS | SEA | SEA | SEA | SEA | |
-| Mon 11/3 | 8:15PM | ARI | DAL | DAL | DAL | DAL | DAL | |
+| Sun 11/2 | 1:00PM | CHI | CIN | CIN | CHI | CHI | CHI | CHI |
+| Sun 11/2 | 1:00PM | MIN | DET | DET | DET | DET | DET | MIN |
+| Sun 11/2 | 1:00PM | CAR | GB | GB | GB | GB | GB | CAR |
+| Sun 11/2 | 1:00PM | LAC | TEN | LAC | LAC | LAC | LAC | LAC |
+| Sun 11/2 | 1:00PM | ATL | NE | NE | NE | NE | NE | NE |
+| Sun 11/2 | 1:00PM | SF | NYG | SF | SF | SF | SF | SF |
+| Sun 11/2 | 1:00PM | IND | PIT | IND | IND | IND | IND | PIT |
+| Sun 11/2 | 1:00PM | DEN | HOU | HOU | HOU | HOU | HOU | DEN |
+| Sun 11/2 | 4:05PM | JAX | LV | JAX | LV | LV | JAX | JAX |
+| Sun 11/2 | 4:05PM | NO | LAR | LAR | LAR | LAR | LAR | LAR |
+| Sun 11/2 | 4:25PM | KC | BUF | KC | KC | KC | KC | BUF |
+| Sun 11/2 | 8:20PM | SEA | WAS | SEA | SEA | SEA | SEA | SEA |
+| Mon 11/3 | 8:15PM | ARI | DAL | DAL | DAL | DAL | DAL | ARI |
 
 **Agent Agreement Summary:**
 - **12 games with complete agent agreement**
@@ -208,14 +208,139 @@ Given the agreement between both agents, despite the spread discrepancy, the fun
 
 ---
 
+---
+
+## Week 9 Final Results and Analysis
+*Final Results - November 5, 2025*
+
+**Final Records:**
+- **ELO Agent: 7-7 (50.0%)**
+- **Betting Agent: 7-7 (50.0%)**
+- **Claude's Picks: 7-7 (50.0%)**
+- **Pete's Picks: 8-6 (57.1%)**
+
+### The Six Upsets That Got Us
+
+**Consensus Failures (Both Agents Agreed, Both Wrong):**
+
+1. **MIN 27, DET 24** ⚠️ **BIGGEST UPSET**
+   - **Our Pick:** DET -11 (83% ELO confidence - one of highest of week)
+   - **What Happened:** Vikings pulled off massive road upset in division game
+   - **The Miss:** Rare public/sharp alignment (89% bets, 94% money on Lions) completely failed. Vikings' OL issues didn't matter as much as expected.
+
+2. **CAR 16, GB 13** ⚠️
+   - **Our Pick:** GB -12.5 (85% ELO confidence - second-highest of week)
+   - **What Happened:** Panthers stunned Packers at Lambeau in shocking upset
+   - **The Miss:** Second-highest confidence pick of the week failed. Panthers (worst team metrics) beat playoff contender.
+
+3. **PIT 27, IND 20** ⚠️
+   - **Our Pick:** IND -4 (64% ELO confidence) - "Clearest sharp play of the week"
+   - **What Happened:** Steelers defense dominated #1 offense Colts at home
+   - **The Miss:** Sharp money was supposedly on Colts (line moved -1.5 → -2.5 → -3). Steelers defense shut down the league's best offense.
+
+4. **DEN 18, HOU 15** ⚠️
+   - **Our Pick:** HOU -4.5 (65% ELO confidence)
+   - **What Happened:** Broncos won defensive battle despite line flip favoring Houston
+   - **The Miss:** Line flipped from Broncos to Texans (sharp money signal), lowest total of week (39.5) suggested defensive game, but we had wrong defense.
+
+5. **BUF 28, KC 21** ⚠️
+   - **Our Pick:** KC -2 (51% ELO confidence - coin flip)
+   - **What Happened:** Bills dominated "Game of the Year" at home
+   - **The Miss:** Sharp money backed Mahomes, but Allen delivered at home. Our coin-flip read went wrong.
+
+6. **ARI 27, DAL 17** ⚠️
+   - **Our Pick:** DAL -2 (57% ELO confidence)
+   - **What Happened:** Cardinals dominated Cowboys in primetime
+   - **The Miss:** Highest total of week (53.5) was correct, but wrong team. Dallas defense collapsed.
+
+### What Worked (7 Correct Picks)
+
+1. ✅ **BAL 28, MIA 6** - Thursday night consensus delivered
+2. ✅ **CHI 47, CIN 42** - Tiebreaker game: Betting/Claude/Pete right, ELO wrong (high-scoring shootout as predicted with 52.5 total)
+3. ✅ **LAC 27, TEN 20** - Road favorites trend continued
+4. ✅ **NE 24, ATL 23** - Patriots sharp action paid off
+5. ✅ **SF 34, NYG 24** - 49ers covered small road spread
+6. ✅ **LAR 34, NO 10** - Highest confidence pick (91% ELO) demolished Saints
+7. ✅ **SEA 38, WAS 14** - Seahawks dominated SNF despite Daniels playing
+
+### Disagreement Games: Split 1-1
+
+**CHI @ CIN (Betting/Claude/Pete WIN, ELO LOSES):**
+- Betting agent, Claude, and Pete all correctly picked CHI
+- ELO's CIN pick (52% coin flip) lost
+- Bears won 47-42 in shootout (total 52.5 was spot-on)
+- **Betting market conviction was correct**
+
+**JAX @ LV (ELO/Pete WIN, Betting/Claude LOSE):**
+- ELO and Pete correctly picked JAX
+- Betting agent and Claude picked LV based on sharp line movement
+- Jaguars won 30-29 in thriller
+- **Sharp money indicators were wrong; ELO's 61% confidence validated**
+
+### What Went Wrong: A Brutal Week
+
+**High-Confidence Picks Failed Spectacularly:**
+- **4 picks with 75%+ ELO confidence:** Went 1-3 (25%)
+  - LAR 91%: ✅ WON
+  - GB 85%: ✗ LOST (CAR upset)
+  - DET 83%: ✗ LOST (MIN upset)
+  - NE 75%: ✅ WON
+
+**Consensus Picks (Both Agents Agreed):**
+- **12 consensus games:** Went 6-6 (50%)
+- This is dramatically worse than historical consensus performance (typically 75%+)
+
+**Sharp Money Indicators Failed:**
+- IND "clearest sharp play" lost
+- DET line moved WITH public money, still lost
+- HOU line flip signal was backwards
+- KC sharp money backed wrong team
+
+**Home Underdogs Dominated:**
+- BUF beat KC (rare Bills home underdog)
+- PIT beat IND (#1 offense)
+
+**Road Underdogs Shocked:**
+- MIN beat DET (83% ELO favorite)
+- CAR beat GB (85% ELO favorite)
+
+### Key Takeaways
+
+**What We Learned:**
+1. **Confidence ≠ Certainty:** Two of our top-3 confidence picks (DET 83%, GB 85%) lost outright
+2. **Sharp Money Can Be Very Wrong:** IND sharp play, DET public/sharp alignment, HOU line flip - all failed
+3. **Divisional Games Are Chaotic:** MIN beating DET in rivalry game defied all logic
+4. **Home Dogs Are Dangerous:** BUF and PIT both won as rare home underdogs
+5. **Pete's Gut > Models This Week:** Pete went 8-6 by trusting different signals on disagreement games
+
+**Statistical Notes:**
+- **7-7 (50%)** is our worst week of the season
+- **Pete beat us 8-6 (57.1%)** - his JAX pick was key difference
+- **Coin-flip games:** We went 1-2 (CHI ✓, KC ✗, DAL ✗)
+- **Large spread favorites:** Went 1-3 (LAR ✓, DET ✗, GB ✗, IND ✗)
+
+**What to Improve for Week 10:**
+1. Don't over-weight sharp money indicators - they can be consensus wrong
+2. Respect home underdogs more, especially good teams (BUF, PIT)
+3. Divisional games have extra variance - be more cautious with confidence
+4. When high-confidence picks cluster (4 at 75%+), variance can hurt badly
+5. Consider Pete's gut feel - his 8-6 suggests value in contrarian thinking
+
+**Reality Check:**
+- 50% is still winning in the long run (break-even is 52.4% with -110 juice)
+- Some weeks are just variance weeks - Week 3 was 41.7%, this was 50%
+- The methodology is still sound - we just hit a rough week with multiple upsets
+
+---
+
 ## Current Season Performance
 
-**Through Week 8:**
-- Claude Analysis: 10-3 (76.9%)
-- Pete's Picks: 10-3 (76.9%)
+**Through Week 9:**
+- Claude Analysis: 17-10 (63.0%) [was 10-3, now 17-10]
+- Pete's Picks: 18-9 (66.7%) [was 10-3, now 18-9]
 
-**Week 9 Status:**
-- Thursday Result: 1-0 (BAL victory)
-- Remaining Games: 13
-- Agent Agreement: 12 of 14 games (85.7%)
-- High Confidence Picks (75%+): 4 games
+**Week 9 Summary:**
+- Consensus picks: 6-6 (major underperformance from usual 75%+)
+- High confidence picks (75%+): 1-3 (brutal)
+- Disagreement games: Pete 2-0, Claude 1-1
+- Pete extends lead to +1 game over Claude
