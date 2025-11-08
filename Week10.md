@@ -22,24 +22,26 @@
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
 | Thu 11/6 | 8:15PM | LV | DEN | DEN | LV | LV | DEN | DEN |
-| Sun 11/9 | 9:30AM | ATL | IND | IND | IND | IND | | |
-| Sun 11/9 | 1:00PM | BAL | MIN | BAL | BAL | BAL | | |
-| Sun 11/9 | 1:00PM | CLE | NYJ | NYJ | CLE | **CLE** | | |
-| Sun 11/9 | 1:00PM | NYG | CHI | CHI | CHI | CHI | | |
-| Sun 11/9 | 1:00PM | NO | CAR | CAR | CAR | CAR | | |
-| Sun 11/9 | 1:00PM | NE | TB | TB | TB | TB | | |
-| Sun 11/9 | 1:00PM | BUF | MIA | BUF | BUF | BUF | | |
-| Sun 11/9 | 1:00PM | JAX | HOU | HOU | HOU | HOU | | |
-| Sun 11/9 | 4:05PM | ARI | SEA | SEA | SEA | SEA | | |
-| Sun 11/9 | 4:25PM | LAR | SF | LAR | LAR | LAR | | |
-| Sun 11/9 | 4:25PM | DET | WSH | DET | DET | DET | | |
-| Sun 11/9 | 8:20PM | PIT | LAC | LAC | LAC | LAC | | |
-| Mon 11/10 | 8:15PM | PHI | GB | GB | GB | GB | | |
+| Sun 11/9 | 9:30AM | ATL | IND | IND | IND | IND | IND | |
+| Sun 11/9 | 1:00PM | BAL | MIN | BAL | BAL | BAL | BAL | |
+| Sun 11/9 | 1:00PM | CLE | NYJ | NYJ | CLE | **CLE** | **NYJ** | |
+| Sun 11/9 | 1:00PM | NYG | CHI | CHI | CHI | CHI | CHI | |
+| Sun 11/9 | 1:00PM | NO | CAR | CAR | CAR | CAR | CAR | |
+| Sun 11/9 | 1:00PM | NE | TB | TB | TB | TB | TB | |
+| Sun 11/9 | 1:00PM | BUF | MIA | BUF | BUF | BUF | BUF | |
+| Sun 11/9 | 1:00PM | JAX | HOU | HOU | HOU | HOU | HOU | |
+| Sun 11/9 | 4:05PM | ARI | SEA | SEA | SEA | SEA | SEA | |
+| Sun 11/9 | 4:25PM | LAR | SF | LAR | LAR | LAR | LAR | |
+| Sun 11/9 | 4:25PM | DET | WSH | DET | DET | DET | DET | |
+| Sun 11/9 | 8:20PM | PIT | LAC | LAC | LAC | LAC | LAC | |
+| Mon 11/10 | 8:15PM | PHI | GB | GB | GB | GB | **PHI** | |
 
 **Agent Agreement Summary:**
 - **Thursday Night Result**: DEN 10, LV 7 - Betting agent correct (LV +9.5 covered), ELO correct on winner
-- **Sunday/Monday Games**: 12 of 13 games show agent agreement
-- **One Disagreement**: CLE @ NYJ - ELO picks NYJ, Betting picks CLE (highlighted in bold)
+- **Sunday/Monday Games**: 10 of 13 games show complete agreement between all predictors
+- **Pete's Disagreements**:
+  - CLE @ NYJ - Pete picks NYJ (with ELO), Claude picks CLE (with Betting)
+  - PHI @ GB - Pete picks PHI, all others pick GB
 
 ---
 
