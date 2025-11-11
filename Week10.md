@@ -1,11 +1,42 @@
 # Week 10 NFL Predictions - 2025 Season
 
-## Week 9 Results and Analysis
-*Final Results - November 5, 2025*
+## Week 10 Results and Analysis
+*Final Results - November 12, 2025*
 
-**Final Records:**
-- Claude Analysis: 17-10 (63.0%)
-- Pete's Picks: 18-9 (66.7%)
+**Final Season Records (Weeks 1-10):**
+- **Pete's Picks: 28-13 (68.3%)**
+- **Claude's Analysis: 25-16 (61.0%)**
+
+**Week 10 Performance:**
+- **Pete: 10-4 (71.4%)** ⭐ Week Winner
+- **ELO Agent: 9-5 (64.3%)**
+- **Claude: 8-6 (57.1%)**
+- **Betting Agent: 8-6 (57.1%)**
+
+**The Three Upsets That Defined Week 10:**
+
+1. **MIA 30, BUF 13** - Biggest shock of the week. Bills were 9/10 confidence, consensus pick across all predictors. Miami dominated in a stunning upset as a 9.5-point underdog.
+
+2. **NE 28, TB 23** - Patriots won outright as underdogs. All predictors picked Tampa Bay. Sharp money on Patriots proved correct despite consensus against them.
+
+3. **NO 17, CAR 7** - Saints won as underdogs. All predictors picked Carolina. Divisional upset in a defensive struggle.
+
+**Pete's Two Contrarian Picks Both Hit:**
+
+1. **NYJ 27, CLE 20** - Pete sided with ELO (NYJ), Claude sided with Betting (CLE). Trade deadline narrative proved overblown - Jets still had enough at home.
+
+2. **PHI 10, GB 7** - Pete went against everyone (ELO, Betting, Claude all picked GB). Situational handicapping (+3.5 rest edge) validated. Eagles' 15 days rest vs Packers' 8 days was decisive in low-scoring defensive battle.
+
+**Key Insight:** Pete's willingness to trust power ratings on NYJ and situational factors on PHI created separation. Going 2-for-2 on disagreements delivered the week's best performance.
+
+**What Worked:** High-confidence consensus picks delivered: IND (London), BAL, CHI, HOU, SEA, LAR, DET, LAC all won as predicted. The 8-for-8 consensus core was solid.
+
+**Season Standings:** Pete extends lead to 28-13 (68.3%) vs Claude's 25-16 (61.0%) - a 3-game advantage with 7 weeks remaining.
+
+---
+
+## Week 9 Results Recap
+*Final Results - November 5, 2025*
 
 **Week 9 Performance:**
 - ELO Agent: 7-7 (50.0%)
@@ -22,19 +53,19 @@
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
 | Thu 11/6 | 8:15PM | LV | DEN | DEN | LV | LV | DEN | DEN |
-| Sun 11/9 | 9:30AM | ATL | IND | IND | IND | IND | IND | |
-| Sun 11/9 | 1:00PM | BAL | MIN | BAL | BAL | BAL | BAL | |
-| Sun 11/9 | 1:00PM | CLE | NYJ | NYJ | CLE | **CLE** | **NYJ** | |
-| Sun 11/9 | 1:00PM | NYG | CHI | CHI | CHI | CHI | CHI | |
-| Sun 11/9 | 1:00PM | NO | CAR | CAR | CAR | CAR | CAR | |
-| Sun 11/9 | 1:00PM | NE | TB | TB | TB | TB | TB | |
-| Sun 11/9 | 1:00PM | BUF | MIA | BUF | BUF | BUF | BUF | |
-| Sun 11/9 | 1:00PM | JAX | HOU | HOU | HOU | HOU | HOU | |
-| Sun 11/9 | 4:05PM | ARI | SEA | SEA | SEA | SEA | SEA | |
-| Sun 11/9 | 4:25PM | LAR | SF | LAR | LAR | LAR | LAR | |
-| Sun 11/9 | 4:25PM | DET | WSH | DET | DET | DET | DET | |
-| Sun 11/9 | 8:20PM | PIT | LAC | LAC | LAC | LAC | LAC | |
-| Mon 11/10 | 8:15PM | PHI | GB | GB | GB | GB | **PHI** | |
+| Sun 11/9 | 9:30AM | ATL | IND | IND | IND | IND | IND | IND |
+| Sun 11/9 | 1:00PM | BAL | MIN | BAL | BAL | BAL | BAL | BAL |
+| Sun 11/9 | 1:00PM | CLE | NYJ | NYJ | CLE | **CLE** | **NYJ** | NYJ |
+| Sun 11/9 | 1:00PM | NYG | CHI | CHI | CHI | CHI | CHI | CHI |
+| Sun 11/9 | 1:00PM | NO | CAR | CAR | CAR | CAR | CAR | NO |
+| Sun 11/9 | 1:00PM | NE | TB | TB | TB | TB | TB | NE |
+| Sun 11/9 | 1:00PM | BUF | MIA | BUF | BUF | BUF | BUF | MIA |
+| Sun 11/9 | 1:00PM | JAX | HOU | HOU | HOU | HOU | HOU | HOU |
+| Sun 11/9 | 4:05PM | ARI | SEA | SEA | SEA | SEA | SEA | SEA |
+| Sun 11/9 | 4:25PM | LAR | SF | LAR | LAR | LAR | LAR | LAR |
+| Sun 11/9 | 4:25PM | DET | WSH | DET | DET | DET | DET | DET |
+| Sun 11/9 | 8:20PM | PIT | LAC | LAC | LAC | LAC | LAC | LAC |
+| Mon 11/10 | 8:15PM | PHI | GB | GB | GB | GB | **PHI** | PHI |
 
 **Agent Agreement Summary:**
 - **Thursday Night Result**: DEN 10, LV 7 - Betting agent correct (LV +9.5 covered), ELO correct on winner
