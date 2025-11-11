@@ -4,11 +4,11 @@
 *Final Results - November 12, 2025*
 
 **Final Season Records (Weeks 1-10):**
-- **Pete's Picks: 28-13 (68.3%)**
+- **Pete's Picks: 29-14 (67.4%)**
 - **Claude's Analysis: 25-16 (61.0%)**
 
 **Week 10 Performance:**
-- **Pete: 10-4 (71.4%)** ⭐ Week Winner
+- **Pete: 11-3 (78.6%)** ⭐ Week Winner
 - **ELO Agent: 9-5 (64.3%)**
 - **Claude: 8-6 (57.1%)**
 - **Betting Agent: 8-6 (57.1%)**
@@ -31,7 +31,7 @@
 
 **What Worked:** High-confidence consensus picks delivered: IND (London), BAL, CHI, HOU, SEA, LAR, DET, LAC all won as predicted. The 8-for-8 consensus core was solid.
 
-**Season Standings:** Pete extends lead to 28-13 (68.3%) vs Claude's 25-16 (61.0%) - a 3-game advantage with 7 weeks remaining.
+**Season Standings:** Pete extends lead to 29-14 (67.4%) vs Claude's 25-16 (61.0%) - a 4-game advantage with 7 weeks remaining.
 
 ---
 
