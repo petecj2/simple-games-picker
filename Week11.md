@@ -21,7 +21,7 @@
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Thu 11/13 | 8:15PM | NYJ | NE | NE | NYJ | NYJ | | |
+| Thu 11/13 | 8:15PM | NYJ | NE | NE | NYJ | **NYJ** | **NE** | |
 | Sun 11/16 | 9:30AM | WSH | MIA | WSH | | | | |
 | Sun 11/16 | 1:00PM | TB | BUF | BUF | | | | |
 | Sun 11/16 | 1:00PM | GB | NYG | GB | | | | |
@@ -38,7 +38,10 @@
 | Mon 11/17 | 8:15PM | DAL | LV | DAL | | | | |
 
 **Agent Agreement Summary:**
-- **Thursday Night**: Strong disagreement - ELO picks NE -10.5, Betting picks NYJ +13
+- **Thursday Night**: Complete disagreement across all predictors
+  - ELO picks NE -10.5, Betting picks NYJ +13
+  - Claude picks NYJ +13 (following sharp money)
+  - Pete picks NE -13 (following power ratings)
 - **Sunday/Monday Games**: To be analyzed after Thursday Night Football
 
 ---
