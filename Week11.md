@@ -21,7 +21,7 @@
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Thu 11/13 | 8:15PM | NYJ | NE | NE | NYJ | **NYJ** | **NE** | |
+| Thu 11/13 | 8:15PM | NYJ | NE | NE | NYJ | **NYJ** | **NE** | NE |
 | Sun 11/16 | 9:30AM | WSH | MIA | WSH | MIA | **WSH** | **MIA** | |
 | Sun 11/16 | 1:00PM | TB | BUF | BUF | BUF | BUF | BUF | |
 | Sun 11/16 | 1:00PM | GB | NYG | GB | GB | GB | GB | |
