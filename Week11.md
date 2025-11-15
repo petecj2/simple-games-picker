@@ -22,31 +22,36 @@
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
 | Thu 11/13 | 8:15PM | NYJ | NE | NE | NYJ | **NYJ** | **NE** | |
-| Sun 11/16 | 9:30AM | WSH | MIA | WSH | MIA | **WSH** | | |
-| Sun 11/16 | 1:00PM | TB | BUF | BUF | BUF | BUF | | |
-| Sun 11/16 | 1:00PM | GB | NYG | GB | GB | GB | | |
-| Sun 11/16 | 1:00PM | CHI | MIN | MIN | MIN | MIN | | |
-| Sun 11/16 | 1:00PM | LAC | JAX | JAX | LAC | **LAC** | | |
-| Sun 11/16 | 1:00PM | CAR | ATL | ATL | ATL | ATL | | |
-| Sun 11/16 | 1:00PM | HOU | TEN | HOU | HOU | HOU | | |
-| Sun 11/16 | 1:00PM | CIN | PIT | PIT | PIT | PIT | | |
-| Sun 11/16 | 4:05PM | SF | ARI | SF | SF | SF | | |
-| Sun 11/16 | 4:05PM | SEA | LAR | LAR | LAR | LAR | | |
-| Sun 11/16 | 4:25PM | KC | DEN | KC | KC | KC | | |
-| Sun 11/16 | 4:25PM | BAL | CLE | BAL | BAL | BAL | | |
-| Sun 11/16 | 8:20PM | DET | PHI | PHI | PHI | PHI | | |
-| Mon 11/17 | 8:15PM | DAL | LV | DAL | DAL | **DAL** | | |
+| Sun 11/16 | 9:30AM | WSH | MIA | WSH | MIA | **WSH** | **MIA** | |
+| Sun 11/16 | 1:00PM | TB | BUF | BUF | BUF | BUF | BUF | |
+| Sun 11/16 | 1:00PM | GB | NYG | GB | GB | GB | GB | |
+| Sun 11/16 | 1:00PM | CHI | MIN | MIN | MIN | MIN | MIN | |
+| Sun 11/16 | 1:00PM | LAC | JAX | JAX | LAC | **LAC** | LAC | |
+| Sun 11/16 | 1:00PM | CAR | ATL | ATL | ATL | ATL | **CAR** | |
+| Sun 11/16 | 1:00PM | HOU | TEN | HOU | HOU | HOU | HOU | |
+| Sun 11/16 | 1:00PM | CIN | PIT | PIT | PIT | PIT | PIT | |
+| Sun 11/16 | 4:05PM | SF | ARI | SF | SF | SF | SF | |
+| Sun 11/16 | 4:05PM | SEA | LAR | LAR | LAR | LAR | LAR | |
+| Sun 11/16 | 4:25PM | KC | DEN | KC | KC | KC | **DEN** | |
+| Sun 11/16 | 4:25PM | BAL | CLE | BAL | BAL | BAL | BAL | |
+| Sun 11/16 | 8:20PM | DET | PHI | PHI | PHI | PHI | DET | |
+| Mon 11/17 | 8:15PM | DAL | LV | DAL | DAL | **DAL** | DAL | |
 
 **Agent Agreement Summary:**
 - **Complete Week**: 11 of 14 games (78.6%) show ELO/Betting agreement
+- **Pete vs Claude**: 3 disagreements create differentiation
 - **Thursday Night**: Complete disagreement
   - ELO picks NE -10.5, Betting picks NYJ +13
   - Claude picks NYJ +13 (following sharp money)
   - Pete picks NE -13 (following power ratings)
-- **Sunday/Monday Disagreements**: 3 games resolved via methodology
+- **Sunday/Monday - Claude's Disagreements**: 3 games resolved via methodology
   - **WSH @ MIA**: ELO WSH (51%), Betting MIA (-2.5) - Claude picks WSH (coin flip, defer to slight ELO edge)
   - **LAC @ JAX**: ELO JAX (-1), Betting LAC (-3) - Claude picks LAC (market conviction decisive)
   - **DAL @ LV**: ELO DAL (51%), Betting DAL (-3.5) - Claude picks DAL (market shows conviction)
+- **Pete's Disagreements with Claude**:
+  - **WSH @ MIA**: Pete picks MIA (with Betting), Claude picks WSH (with ELO)
+  - **CAR @ ATL**: Pete picks CAR +3.5, Claude picks ATL (with all agents)
+  - **KC @ DEN**: Pete picks DEN at home, Claude picks KC (with all agents)
 
 ---
 
