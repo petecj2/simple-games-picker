@@ -4,26 +4,28 @@
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Sun 12/28 | 4:05PM | NYG | LV | NYG | LV | **NYG** | | |
-| Thu 12/25 | 1:00PM | DAL | WSH | WSH | DAL | **DAL** | | |
-| Sun 12/28 | 1:00PM | JAX | IND | JAX | JAX | JAX | | |
-| Sun 12/28 | 1:00PM | TB | MIA | TB | TB | TB | | |
-| Sun 12/28 | 1:00PM | ARI | CIN | CIN | CIN | CIN | | |
-| Thu 12/25 | 4:30PM | DET | MIN | DET | DET | DET | | |
-| Sat 12/27 | 4:30PM | HOU | LAC | HOU | LAC | **LAC** | | |
-| Sun 12/28 | 1:00PM | NO | TEN | TEN | NO | **NO** | | |
-| Thu 12/25 | 8:15PM | DEN | KC | KC | DEN | **DEN** | | |
-| Sun 12/28 | 4:25PM | PHI | BUF | BUF | PHI | **PHI** | | |
-| Sat 12/27 | 8:00PM | BAL | GB | GB | GB | GB | | |
-| Sun 12/28 | 1:00PM | PIT | CLE | PIT | PIT | PIT | | |
-| Sun 12/28 | 8:20PM | CHI | SF | SF | SF | SF | | |
-| Sun 12/28 | 1:00PM | NE | NYJ | NE | NE | NE | | |
-| Sun 12/28 | 1:00PM | SEA | CAR | SEA | SEA | SEA | | |
-| Mon 12/29 | 8:15PM | LAR | ATL | LAR | LAR | LAR | | |
+| Sun 12/28 | 4:05PM | NYG | LV | NYG | LV | **NYG** | NYG | |
+| Thu 12/25 | 1:00PM | DAL | WSH | WSH | DAL | **DAL** | DAL | |
+| Sun 12/28 | 1:00PM | JAX | IND | JAX | JAX | JAX | JAX | |
+| Sun 12/28 | 1:00PM | TB | MIA | TB | TB | TB | TB | |
+| Sun 12/28 | 1:00PM | ARI | CIN | CIN | CIN | CIN | CIN | |
+| Thu 12/25 | 4:30PM | DET | MIN | DET | DET | DET | DET | |
+| Sat 12/27 | 4:30PM | HOU | LAC | HOU | LAC | **LAC** | **HOU** | |
+| Sun 12/28 | 1:00PM | NO | TEN | TEN | NO | **NO** | NO | |
+| Thu 12/25 | 8:15PM | DEN | KC | KC | DEN | **DEN** | DEN | |
+| Sun 12/28 | 4:25PM | PHI | BUF | BUF | PHI | **PHI** | **BUF** | |
+| Sat 12/27 | 8:00PM | BAL | GB | GB | GB | GB | GB | |
+| Sun 12/28 | 1:00PM | PIT | CLE | PIT | PIT | PIT | PIT | |
+| Sun 12/28 | 8:20PM | CHI | SF | SF | SF | SF | SF | |
+| Sun 12/28 | 1:00PM | NE | NYJ | NE | NE | NE | NE | |
+| Sun 12/28 | 1:00PM | SEA | CAR | SEA | SEA | SEA | SEA | |
+| Mon 12/29 | 8:15PM | LAR | ATL | LAR | LAR | LAR | LAR | |
 
 **Agent Agreement Summary:**
-- **11 games with agreement**: JAX, TB, CIN, DET, GB, PIT, SF, NE, SEA, LAR, and one tiebreak (BUF)
-- **5 games requiring tiebreakers** (shown in bold): NYG @ LV, DAL @ WSH, HOU @ LAC, NO @ TEN, DEN @ KC, PHI @ BUF
+- **10 games with full agreement**: JAX, TB, CIN, DET, GB, PIT, SF, NE, SEA, LAR
+- **6 games requiring tiebreakers** (shown in bold): NYG @ LV, DAL @ WSH, HOU @ LAC, NO @ TEN, DEN @ KC, PHI @ BUF
+- **Pete agrees with Claude on 4 tiebreakers**: NYG, DAL, NO, DEN
+- **Pete disagrees with Claude on 2 games** (double bold): HOU @ LAC (Pete: HOU), PHI @ BUF (Pete: BUF)
 
 ---
 
