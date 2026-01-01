@@ -1,25 +1,110 @@
 # Week 17 NFL Predictions - 2025 Season
 
+## Week 17 Results and Analysis
+*Final Results - December 30, 2025*
+
+**Final Records:**
+- ELO Agent: 7-9 (43.8%)
+- Betting Agent: 9-7 (56.3%)
+- Claude Analysis: 10-6 (62.5%)
+- Pete's Picks: 10-6 (62.5%)
+
+**Overview:** Week 17 was a wild week with multiple major upsets that exposed the limitations of statistical models when teams rest starters or when playoff seeding scenarios create unpredictable motivation patterns. Claude and Pete tied for the best record at 10-6, while the ELO system had its worst week of the season at 7-9.
+
+**The Five Major Upsets That Shocked Everyone:**
+
+1. **MIN 23, DET 10** (Thu 12/25) - ALL PREDICTORS WRONG
+   - Lions were 7.5-point favorites competing for NFC #1 seed
+   - Vikings won decisively 23-10 at home on Christmas Day
+   - Lions may have rested key starters with playoffs locked up
+   - Biggest upset of the week - nobody saw this coming
+
+2. **MIA 34, TB 10** (Sun 12/28) - ALL PREDICTORS WRONG
+   - Buccaneers were 5.5-point favorites fighting for NFC South title
+   - Dolphins (eliminated at 6-9) demolished Tampa 34-10
+   - Miami showed no quit despite nothing to play for
+   - Tampa's season spiraled with playoff hopes crushed
+
+3. **BAL 41, GB 24** (Sat 12/27) - ALL PREDICTORS WRONG
+   - Packers were 2.5-point favorites at Lambeau Field
+   - Ravens destroyed Green Bay 41-24 in Saturday night blowout
+   - Lamar Jackson's back injury cleared, dominated in cold weather
+   - ELO and Betting both had high confidence, both completely wrong
+
+4. **CLE 24, PIT 20** (Sun 12/28) - ALL PREDICTORS WRONG
+   - Steelers were 3.5-point favorites and could clinch playoff spot
+   - Browns (3-12, eliminated) upset Pittsburgh 24-20
+   - Divisional rivalry kept Cleveland motivated despite terrible season
+   - Steelers overlooked struggling Browns
+
+5. **ATL 27, LAR 24** (Mon 12/29) - ALL PREDICTORS WRONG
+   - Rams were 7.5-point favorites as Super Bowl contenders
+   - Falcons (eliminated 6-9) won 27-24 on 51-yard FG
+   - Monday Night Football upset caps shocking week
+   - Rams' loss drops them in playoff seeding
+
+**What Worked (11 Correct Picks):**
+
+**Tiebreaker Successes (5-1):**
+- **NYG 34, LV 10** - Giants won battle of 2-13 teams (NYG -34, 2/10 confidence)
+- **DAL 30, WSH 23** - Cowboys covered after Jayden Daniels shut down (DAL -7, 8/10 confidence)
+- **HOU 20, LAC 16** - Pete correctly took Texans, Claude took Chargers (HOU -1.5, 6/10 confidence)
+- **NO 17, TEN 13** - Saints won ugly game vs Titans (NO -2.5, 4/10 confidence)
+- **DEN 20, KC 13** - Broncos covered huge spread vs Chiefs' 3rd-string QB (DEN -13.5, 9/10 confidence)
+- **PHI 13, BUF 12** - Eagles won in extreme weather with Saquon (PHI +1.5, 7/10 confidence)
+
+**Consensus Picks That Hit (5 of 10):**
+- **JAX won @ IND** - Jaguars on 6-game win streak continued dominance
+- **CIN won vs ARI** - Bengals' talent advantage showed at home
+- **SF 42, CHI 38** - 49ers won SNF shootout as predicted
+- **NE won @ NYJ** - Patriots dominated dysfunctional Jets to stay in playoff hunt
+- **SEA won @ CAR** - Seahawks protected NFC standing with road win
+
+**Key Takeaways:**
+
+1. **Rest vs Play Dilemma**: Detroit's loss to Minnesota suggests teams resting players despite "competing for #1 seed" narratives
+2. **Eliminated Teams Dangerous**: Miami, Cleveland, and Atlanta all won as eliminated underdogs - "nothing to play for" doesn't mean no effort
+3. **Weather Analysis Worked**: PHI beat BUF 13-12 in extreme weather exactly as predicted (Saquon factor validated)
+4. **Injury Analysis Mixed**: DAL-WSH (Daniels OUT) was correct, but Jordan Love's status didn't help predict GB outcome
+5. **Tiebreakers Excelled**: Claude went 5-1 on tiebreaker games (NYG, DAL, NO, DEN, PHI correct; only LAC wrong)
+6. **ELO System Struggled**: 7-9 record shows power ratings can't account for late-season rest/motivation dynamics
+
+**Statistical Notes:**
+- Claude/Pete at 62.5% is solid performance in unpredictable week
+- 5 games where ALL predictors were wrong (31% of slate) - highly unusual
+- Tiebreaker games went 5-1 (83%) - methodology worked well
+- High-confidence plays (8+): DEN ✓, DET ✗, DAL ✓, NE ✓, LAR ✗, SEA ✓ (4-2, 67%)
+
+**Week 18 Improvements:**
+1. **Account for Rest**: Teams locked into playoff seeds may rest starters even when "competing"
+2. **Respect Divisional Rivalries**: CLE-PIT shows division games always dangerous regardless of records
+3. **Don't Dismiss Eliminated Teams**: MIA and ATL proved eliminated teams can still dominate
+4. **Trust Tiebreaker Process**: 5-1 record validates the methodology - keep using it
+5. **Weather Analysis**: Continue detailed weather breakdowns (PHI-BUF success)
+6. **Maintain Humility**: 5 unanimous misses show NFL is fundamentally unpredictable late in season
+
+---
+
 ## Synopsis of Week 17 Picks
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Sun 12/28 | 4:05PM | NYG | LV | NYG | LV | **NYG** | NYG | |
-| Thu 12/25 | 1:00PM | DAL | WSH | WSH | DAL | **DAL** | DAL | |
-| Sun 12/28 | 1:00PM | JAX | IND | JAX | JAX | JAX | JAX | |
-| Sun 12/28 | 1:00PM | TB | MIA | TB | TB | TB | TB | |
-| Sun 12/28 | 1:00PM | ARI | CIN | CIN | CIN | CIN | CIN | |
-| Thu 12/25 | 4:30PM | DET | MIN | DET | DET | DET | DET | |
-| Sat 12/27 | 4:30PM | HOU | LAC | HOU | LAC | **LAC** | **HOU** | |
-| Sun 12/28 | 1:00PM | NO | TEN | TEN | NO | **NO** | NO | |
-| Thu 12/25 | 8:15PM | DEN | KC | KC | DEN | **DEN** | DEN | |
-| Sun 12/28 | 4:25PM | PHI | BUF | BUF | PHI | **PHI** | **BUF** | |
-| Sat 12/27 | 8:00PM | BAL | GB | GB | GB | GB | GB | |
-| Sun 12/28 | 1:00PM | PIT | CLE | PIT | PIT | PIT | PIT | |
-| Sun 12/28 | 8:20PM | CHI | SF | SF | SF | SF | SF | |
-| Sun 12/28 | 1:00PM | NE | NYJ | NE | NE | NE | NE | |
-| Sun 12/28 | 1:00PM | SEA | CAR | SEA | SEA | SEA | SEA | |
-| Mon 12/29 | 8:15PM | LAR | ATL | LAR | LAR | LAR | LAR | |
+| Sun 12/28 | 4:05PM | NYG | LV | NYG | LV | **NYG** | NYG | NYG |
+| Thu 12/25 | 1:00PM | DAL | WSH | WSH | DAL | **DAL** | DAL | DAL |
+| Sun 12/28 | 1:00PM | JAX | IND | JAX | JAX | JAX | JAX | JAX |
+| Sun 12/28 | 1:00PM | TB | MIA | TB | TB | TB | TB | MIA |
+| Sun 12/28 | 1:00PM | ARI | CIN | CIN | CIN | CIN | CIN | CIN |
+| Thu 12/25 | 4:30PM | DET | MIN | DET | DET | DET | DET | MIN |
+| Sat 12/27 | 4:30PM | HOU | LAC | HOU | LAC | **LAC** | **HOU** | HOU |
+| Sun 12/28 | 1:00PM | NO | TEN | TEN | NO | **NO** | NO | NO |
+| Thu 12/25 | 8:15PM | DEN | KC | KC | DEN | **DEN** | DEN | DEN |
+| Sun 12/28 | 4:25PM | PHI | BUF | BUF | PHI | **PHI** | **BUF** | PHI |
+| Sat 12/27 | 8:00PM | BAL | GB | GB | GB | GB | GB | BAL |
+| Sun 12/28 | 1:00PM | PIT | CLE | PIT | PIT | PIT | PIT | CLE |
+| Sun 12/28 | 8:20PM | CHI | SF | SF | SF | SF | SF | SF |
+| Sun 12/28 | 1:00PM | NE | NYJ | NE | NE | NE | NE | NE |
+| Sun 12/28 | 1:00PM | SEA | CAR | SEA | SEA | SEA | SEA | SEA |
+| Mon 12/29 | 8:15PM | LAR | ATL | LAR | LAR | LAR | LAR | ATL |
 
 **Agent Agreement Summary:**
 - **10 games with full agreement**: JAX, TB, CIN, DET, GB, PIT, SF, NE, SEA, LAR

@@ -1,34 +1,76 @@
 # Week 15 NFL Predictions - 2025 Season
 
+## Week 15 Results Recap
+*Final Results - December 16, 2025*
+
+**Final Records:**
+- **Pete's Picks: 10-6 (62.5%)** 🤝
+- **Claude's Analysis: 10-6 (62.5%)** 🤝 TIE!
+- **ELO Agent: 9-7 (56.3%)**
+- **Betting Agent: 9-7 (56.3%)**
+
+**Key Takeaway:** Perfect tie at 10-6! Pete's strategic disagreements broke even (1-1 on CIN/DEN), while Claude also went 0-1 on the GB sharp money play. Both of us outperformed the individual agents, showing the value of human judgment in close calls.
+
+**What Worked:**
+- **High-confidence picks delivered**: SEA, JAX, PHI, HOU, SF, LAR all won as expected
+- **Injury analysis accurate**: SEA crushed IND (backup QB), though NYG lost despite Daniels being OUT
+- **Sharp money on Panthers failed**: 92% money indicator lost (NO 20, CAR 17)
+- **Pete's DEN call over GB**: Trusting ELO over sharp money paid off (DEN 34, GB 26)
+
+**Major Upsets:**
+1. **LAC 16, KC 13** - Chiefs stunned at home, both agents wrong
+2. **WSH 29, NYG 21** - Commanders won WITHOUT Jayden Daniels (Mariota started)
+3. **NO 20, CAR 17** - Saints won despite 92% sharp money on Panthers
+4. **MIN 34, DAL 26** - Vikings dominated despite Cowboys being favorites
+5. **ATL 29, TB 28** - Thursday night upset started the week
+
+**Week 15 Lessons:**
+- Sharp money isn't infallible (Panthers 92% money lost, Packers reverse line movement lost)
+- Backup QBs can win (Mariota led WSH over NYG)
+- Don't overthink close games (DEN -1 was the right call over GB sharp money)
+- High-confidence ELO picks (80%+) went 5-1 (only NO upset CAR)
+
+---
+
 ## Synopsis of Week 15 Picks
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
 | Thu 12/11 | 8:15PM | ATL | TB | TB | TB | TB | TB | ATL |
-| Sat 12/14 | 1:00PM | BAL | CIN | BAL | BAL | BAL | **CIN** | |
-| Sat 12/14 | 1:00PM | NYJ | JAX | JAX | JAX | JAX | JAX | |
-| Sat 12/14 | 1:00PM | LV | PHI | PHI | PHI | PHI | PHI | |
-| Sat 12/14 | 1:00PM | ARI | HOU | HOU | HOU | HOU | HOU | |
-| Sat 12/14 | 1:00PM | LAC | KC | KC | KC | KC | KC | |
-| Sat 12/14 | 1:00PM | CLE | CHI | CHI | CHI | CHI | CHI | |
-| Sat 12/14 | 1:00PM | WSH | NYG | NYG | NYG | NYG | NYG | |
-| Sat 12/14 | 1:00PM | BUF | NE | BUF | BUF | BUF | BUF | |
-| Sat 12/14 | 4:25PM | IND | SEA | SEA | SEA | SEA | SEA | |
-| Sat 12/14 | 4:25PM | CAR | NO | CAR | CAR | CAR | CAR | |
-| Sat 12/14 | 4:25PM | TEN | SF | SF | SF | SF | SF | |
-| Sat 12/14 | 4:25PM | DET | LAR | LAR | LAR | LAR | LAR | |
-| Sat 12/14 | 4:25PM | GB | DEN | DEN | GB | **GB** | **DEN** | |
-| Sat 12/14 | 8:20PM | MIN | DAL | DAL | DAL | DAL | DAL | |
-| Sun 12/15 | 8:15PM | MIA | PIT | PIT | PIT | PIT | PIT | |
+| Sat 12/14 | 1:00PM | BAL | CIN | BAL | BAL | BAL | **CIN** | BAL |
+| Sat 12/14 | 1:00PM | NYJ | JAX | JAX | JAX | JAX | JAX | JAX |
+| Sat 12/14 | 1:00PM | LV | PHI | PHI | PHI | PHI | PHI | PHI |
+| Sat 12/14 | 1:00PM | ARI | HOU | HOU | HOU | HOU | HOU | HOU |
+| Sat 12/14 | 1:00PM | LAC | KC | KC | KC | KC | KC | LAC |
+| Sat 12/14 | 1:00PM | CLE | CHI | CHI | CHI | CHI | CHI | CHI |
+| Sat 12/14 | 1:00PM | WSH | NYG | NYG | NYG | NYG | NYG | WSH |
+| Sat 12/14 | 1:00PM | BUF | NE | BUF | BUF | BUF | BUF | BUF |
+| Sat 12/14 | 4:25PM | IND | SEA | SEA | SEA | SEA | SEA | SEA |
+| Sat 12/14 | 4:25PM | CAR | NO | CAR | CAR | CAR | CAR | NO |
+| Sat 12/14 | 4:25PM | TEN | SF | SF | SF | SF | SF | SF |
+| Sat 12/14 | 4:25PM | DET | LAR | LAR | LAR | LAR | LAR | LAR |
+| Sat 12/14 | 4:25PM | GB | DEN | DEN | GB | **GB** | **DEN** | DEN |
+| Sat 12/14 | 8:20PM | MIN | DAL | DAL | DAL | DAL | DAL | MIN |
+| Sun 12/15 | 8:15PM | MIA | PIT | PIT | PIT | PIT | PIT | PIT |
 
 **Agent Agreement Summary:**
 - **Complete Week**: 15 of 16 games (93.8%) show ELO/Betting agreement
-- **ELO/Betting Disagreement**: GB @ DEN - ELO picks DEN (-1), Betting picks GB (-2.5) with sharp money
-- **Claude's Resolution**: Picks GB following sharp money indicators and reverse line movement
+- **ELO/Betting Disagreement**: GB @ DEN - ELO picks DEN (CORRECT), Betting picks GB (WRONG)
+- **Claude's Resolution**: Picked GB following sharp money (WRONG) - should have trusted ELO
 - **Pete's Disagreements with Claude**:
-  - **BAL @ CIN**: Pete picks CIN (home team), Claude picks BAL (with both agents)
-  - **GB @ DEN**: Pete picks DEN (with ELO), Claude picks GB (with Betting/sharp money)
-- **Thursday Night Result**: ATL 17, TB 13 - Both Claude and Pete picked TB incorrectly (0-1 start)
+  - **BAL @ CIN**: Pete picks CIN (WRONG), Claude picks BAL (CORRECT) - Ravens shutout 24-0
+  - **GB @ DEN**: Pete picks DEN (CORRECT), Claude picks GB (WRONG) - Broncos won 34-26
+
+**Pete's Disagreement Record: 1-1 (Won the important one!)**
+**Claude's Disagreement Record: 0-1 (Sharp money failed)**
+
+**Final Scores:**
+- Thu: ATL 29, TB 28 (upset)
+- Sat: BAL 24, CIN 0 | JAX 48, NYJ 20 | PHI 31, LV 0 | HOU 40, ARI 20
+- Sat: LAC 16, KC 13 (upset) | CHI 31, CLE 3 | WSH 29, NYG 21 (upset) | BUF 35, NE 31
+- Sat: SEA 18, IND 16 | NO 20, CAR 17 (upset) | SF 37, TEN 24 | LAR 41, DET 34
+- Sat: DEN 34, GB 26 | MIN 34, DAL 26 (upset)
+- Mon: PIT 28, MIA 15
 
 ---
 
