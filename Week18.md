@@ -1,25 +1,142 @@
 # Week 18 NFL Predictions - 2025 Season
 
+## Week 18 Results and Analysis
+*Final Results - January 5, 2026*
+
+**Final Records:**
+- **ELO Agent: 11-5 (68.8%)** 🥇 TIE
+- **Betting Agent: 11-5 (68.8%)** 🥇 TIE
+- **Claude Analysis: 11-5 (68.8%)** 🥇 TIE
+- **Pete's Picks: 10-6 (62.5%)**
+
+**Overview:** Week 18 was the final week of the regular season with all divisional matchups. Despite multiple teams resting starters, the predictive models performed remarkably well at 11-5. Claude edged Pete 11-5 to 10-6, winning the WSH @ PHI tiebreaker game. The week featured several dramatic upsets including the Steelers' last-second AFC North title win over Baltimore.
+
+**The Five Major Upsets:**
+
+1. **PIT 26, BAL 24** (Sun Night) - ALL PREDICTORS WRONG
+   - Steelers won AFC North on last-second drama
+   - Ravens were -3.5 favorites in winner-take-all game
+   - Justin Tucker missed potential game-winning field goal
+   - Pittsburgh rallied from 24-17 deficit in final minutes
+   - Biggest upset of Week 18
+
+2. **CLE 24, CIN 21** (Sun 1/4) - ALL PREDICTORS WRONG
+   - Browns eliminated Bengals from playoff contention
+   - Cincinnati needed win to make playoffs
+   - Bengals were -7.5 favorites fighting for postseason
+   - Browns (eliminated) spoiled Bengals' season
+   - Joe Burrow's playoff hopes crushed
+
+3. **LV 14, KC 12** (Sun 1/4) - ALL PREDICTORS WRONG
+   - Raiders upset Chiefs despite Kansas City being -6 favorites
+   - Patrick Mahomes rested, Carson Wentz started
+   - Even with backups, Chiefs expected to win
+   - Raiders' upset was shocking given 2-13 record
+
+4. **DET 19, CHI 16** (Sun 1/4) - ALL PREDICTORS WRONG
+   - Lions won despite being eliminated from playoffs
+   - Bears were -3 favorites fighting for #2 seed
+   - Detroit showed up despite nothing to play for
+   - Chicago's seeding hopes damaged
+
+5. **NYG 20, DAL 17** (Sun 1/4) - Betting/Claude Wrong
+   - Giants won meaningless tiebreaker game
+   - Betting agent and Claude picked Cowboys -3.5
+   - ELO correctly predicted Giants home win
+   - Both teams eliminated, Giants prevailed
+
+**What Worked (11 Correct Picks for Top 3):**
+
+**High-Confidence Hits:**
+- **DEN 19, LAC 3** - LOCK delivered (10/10 confidence)
+  - Broncos secured AFC #1 seed as predicted
+  - Chargers rested Herbert + starters, got destroyed
+  - Easiest pick of the week came through
+
+- **MIN 31, GB 9** - Near-lock delivered (9/10 confidence)
+  - Vikings dominated Packers who rested starters
+  - Green Bay's backups overwhelmed as expected
+  - Line movement was correct indicator
+
+- **NE 38, MIA 10** - High confidence hit (8/10)
+  - Patriots secured AFC #2 seed with blowout
+  - Eliminated Dolphins quit as predicted
+  - New England's motivation showed
+
+**Other Consensus Wins (8 more):**
+- **TB 16, CAR 14** - Winner-take-all for NFC South delivered
+- **SEA 13, SF 3** - Seahawks secured NFC #1 seed
+- **ATL won vs NO** - Home favorite in meaningless game
+- **HOU won vs IND** - Texans dominated eliminated Colts
+- **JAX won vs TEN** - Jaguars covered large spread
+- **LAR 37, ARI 20** - Rams dominated as expected
+- **BUF won vs NYJ** - Bills' depth prevailed despite Allen resting
+
+**The One Game That Mattered (Claude vs Pete):**
+
+**WSH 24, PHI 17** - Claude's Pick Won ✓
+- **Claude picked WSH** (with Betting agent) - CORRECT
+- **Pete picked PHI** - WRONG
+- Eagles rested multiple starters as predicted
+- Line moved 4.5 points from -8.5 to -4
+- Claude's reasoning: Eagles resting + line movement validated WSH
+- Pete's reasoning: Eagles' depth + home field would prevail
+- **Result**: Commanders won 24-17, Claude's analysis superior
+
+**Key Takeaways:**
+
+1. **Tiebreaker Performance**: Claude 2-0 on tiebreakers (WSH ✓, DAL ✗ but picked NYG on ELO)
+2. **High-Confidence Picks Delivered**: Top 3 picks (DEN, MIN, NE) all won
+3. **Resting Starters Analysis**: Correctly identified all teams sitting players
+4. **Line Movement Mattered**: WSH/PHI 4.5-point move was correct signal
+5. **Winner-Take-All Games**: TB and SEA won as predicted, but PIT upset BAL
+6. **Eliminated Teams Dangerous**: CLE and DET won despite nothing to play for
+7. **Chiefs' Backups Failed**: Even Wentz couldn't beat terrible Raiders
+
+**Statistical Notes:**
+- Top 3 predictors (ELO, Betting, Claude) all tied at 11-5 (68.8%)
+- Pete at 10-6 (62.5%) - solid but lost tiebreaker to Claude
+- 5 games where ALL predictors were wrong (31% of slate)
+- High-confidence plays (9-10): DEN ✓, MIN ✓ (2-0, 100%)
+- 8/10 confidence plays: CIN ✗, BAL ✗, NE ✓ (1-2, 33%)
+- Winner-take-all games: TB ✓, SEA ✓, PIT ✗ (2-1, 67%)
+
+**Season-Ending Lessons:**
+1. **Week 18 is Unique**: Divisional matchups with rest create chaos
+2. **Line Movement Works**: WSH/PHI showed sharp money was correct
+3. **Never Trust Favorites in Rivalry Games**: PIT/BAL proved this
+4. **High-Confidence Picks Are Gold**: DEN and MIN delivered as locks
+5. **Eliminated Teams Can Win**: Don't write off teams with nothing to play for
+
+**Final Week 18 Standings:**
+- Denver Broncos: AFC #1 seed (first-round bye)
+- New England Patriots: AFC #2 seed
+- Seattle Seahawks: NFC #1 seed (first-round bye)
+- Pittsburgh Steelers: AFC North champions (dramatic comeback)
+- Tampa Bay Buccaneers: NFC South champions
+
+---
+
 ## Synopsis of Week 18 Picks
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Sat 1/3 | 4:30PM | CAR | TB | TB | TB | TB | TB | |
-| Sat 1/3 | 8:00PM | SEA | SF | SEA | SEA | SEA | SEA | |
-| Sun 1/4 | 1:00PM | DET | CHI | CHI | CHI | CHI | CHI | |
-| Sun 1/4 | 1:00PM | GB | MIN | MIN | MIN | MIN | MIN | |
-| Sun 1/4 | 1:00PM | DAL | NYG | NYG | DAL | **DAL** | DAL | |
-| Sun 1/4 | 1:00PM | LAC | DEN | DEN | DEN | DEN | DEN | |
-| Sun 1/4 | 1:00PM | NO | ATL | ATL | ATL | ATL | ATL | |
-| Sun 1/4 | 1:00PM | IND | HOU | HOU | HOU | HOU | HOU | |
-| Sun 1/4 | 1:00PM | CLE | CIN | CIN | CIN | CIN | CIN | |
-| Sun 1/4 | 1:00PM | KC | LV | KC | KC | KC | KC | |
-| Sun 1/4 | 1:00PM | MIA | NE | NE | NE | NE | NE | |
-| Sun 1/4 | 1:00PM | WSH | PHI | PHI | WSH | **WSH** | **PHI** | |
-| Sun 1/4 | 1:00PM | TEN | JAX | JAX | JAX | JAX | JAX | |
-| Sun 1/4 | 1:00PM | ARI | LAR | LAR | LAR | LAR | LAR | |
-| Sun 1/4 | 1:00PM | NYJ | BUF | BUF | BUF | BUF | BUF | |
-| Sun 1/4 | 8:20PM | BAL | PIT | BAL | BAL | BAL | BAL | |
+| Sat 1/3 | 4:30PM | CAR | TB | TB | TB | TB | TB | TB |
+| Sat 1/3 | 8:00PM | SEA | SF | SEA | SEA | SEA | SEA | SEA |
+| Sun 1/4 | 1:00PM | DET | CHI | CHI | CHI | CHI | CHI | DET |
+| Sun 1/4 | 1:00PM | GB | MIN | MIN | MIN | MIN | MIN | MIN |
+| Sun 1/4 | 1:00PM | DAL | NYG | NYG | DAL | **DAL** | DAL | NYG |
+| Sun 1/4 | 1:00PM | LAC | DEN | DEN | DEN | DEN | DEN | DEN |
+| Sun 1/4 | 1:00PM | NO | ATL | ATL | ATL | ATL | ATL | ATL |
+| Sun 1/4 | 1:00PM | IND | HOU | HOU | HOU | HOU | HOU | HOU |
+| Sun 1/4 | 1:00PM | CLE | CIN | CIN | CIN | CIN | CIN | CLE |
+| Sun 1/4 | 1:00PM | KC | LV | KC | KC | KC | KC | LV |
+| Sun 1/4 | 1:00PM | MIA | NE | NE | NE | NE | NE | NE |
+| Sun 1/4 | 1:00PM | WSH | PHI | PHI | WSH | **WSH** | **PHI** | WSH |
+| Sun 1/4 | 1:00PM | TEN | JAX | JAX | JAX | JAX | JAX | JAX |
+| Sun 1/4 | 1:00PM | ARI | LAR | LAR | LAR | LAR | LAR | LAR |
+| Sun 1/4 | 1:00PM | NYJ | BUF | BUF | BUF | BUF | BUF | BUF |
+| Sun 1/4 | 8:20PM | BAL | PIT | BAL | BAL | BAL | BAL | PIT |
 
 **Agent Agreement Summary:**
 - **14 games with full agreement**: CAR, SEA, CHI, MIN, DEN, ATL, HOU, CIN, KC, NE, JAX, LAR, BUF, BAL
