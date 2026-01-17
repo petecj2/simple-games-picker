@@ -1,15 +1,41 @@
 # Week 19 (Wild Card Weekend) NFL Predictions - 2025-26 Playoffs
 
+## Wild Card Weekend Results and Analysis
+*Final Results - January 13, 2025*
+
+**Final Records:**
+- Claude Analysis: 4-2 (66.7%)
+- Pete's Picks: 4-2 (66.7%)
+
+**Key Takeaways:** Wild Card Weekend was historic - the first four games were all decided by 4 or fewer points, a first in NFL history. Our methodology performed well overall but missed on two close games where the home underdog prevailed.
+
+**What Worked:**
+- Both games where agents agreed (SF@PHI excluded) were correct (HOU won)
+- Tiebreaker methodology worked on 2 of 4 disagreements (LAR, BUF)
+- ELO correctly identified LAR and NE as winners
+- Betting agent correctly identified HOU road favorite value
+
+**What Didn't Work:**
+- GB @ CHI: Bears overcame 21-3 halftime deficit (biggest comeback in Bears playoff history) - weather/experience edge didn't materialize
+- SF @ PHI: 49ers upset reigning champs despite all sharp money indicators pointing to PHI - shows playoff variance
+
+**Divisional Round Improvements:**
+- Sharp money consensus doesn't guarantee outcomes - playoff variance is real
+- Historic comebacks can happen - don't assume halftime leads hold
+- Weather impacts can be unpredictable - Bears won despite brutal conditions
+
+---
+
 ## Synopsis of Wild Card Weekend Picks
 
 | Date | Time | Away Team | Home Team | ELO | Betting | Claude | Pete | Winner |
 |------|------|-----------|-----------|-----|---------|--------|------|--------|
-| Sat 1/10 | 4:35PM | LAR | CAR | LAR | CAR | **LAR** | LAR | |
-| Sat 1/10 | 8:15PM | GB | CHI | CHI | GB | **GB** | GB | |
-| Sun 1/11 | 1:05PM | BUF | JAX | JAX | BUF | **BUF** | BUF | |
-| Sun 1/11 | 4:40PM | SF | PHI | PHI | PHI | PHI | PHI | |
-| Sun 1/11 | 8:15PM | LAC | NE | NE | LAC | **NE** | NE | |
-| Mon 1/12 | 8:00PM | HOU | PIT | HOU | HOU | HOU | HOU | |
+| Sat 1/10 | 4:35PM | LAR | CAR | LAR | CAR | **LAR** | LAR | LAR |
+| Sat 1/10 | 8:15PM | GB | CHI | CHI | GB | **GB** | GB | CHI |
+| Sun 1/11 | 1:05PM | BUF | JAX | JAX | BUF | **BUF** | BUF | BUF |
+| Sun 1/11 | 4:40PM | SF | PHI | PHI | PHI | PHI | PHI | SF |
+| Sun 1/11 | 8:15PM | LAC | NE | NE | LAC | **NE** | NE | NE |
+| Mon 1/12 | 8:00PM | HOU | PIT | HOU | HOU | HOU | HOU | HOU |
 
 **Agent Agreement Summary:**
 - **2 games with full agreement**: SF @ PHI, HOU @ PIT
